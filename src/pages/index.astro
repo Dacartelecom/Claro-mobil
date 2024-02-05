@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HomeFija from '../components/PagesTsx/HomeFija';
+---
+
+<Layout title="Planes Claro Hogar Perú">
+	<main>
+		<HomeFija client:only="react"/>
+	</main>
+</Layout>
+
+<style>
+    @import url('https://fonts.cdnfonts.com/css/din-alternate');            
+	*{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-family: 'DIN Alternate', sans-serif;
+                                                
+	}
+
+
+</style>

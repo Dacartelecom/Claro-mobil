@@ -1,0 +1,206 @@
+---
+import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
+import  Notiscript  from '../components/Notiscript.astro';
+import { SelectPlan } from '../components/SelectPlan';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header client:only="react"/>
+		<main>
+			<SelectPlan client:only="react"/>
+		<slot />
+		</main>
+		<Footer client:only="react"/>
+
+		<Notiscript/>
+	</body>
+</html>
+<style is:global>
+ * {
+	box-sizing: border-box;
+	/* outline: 3px solid limegreen !important; */
+	/* background: rgb(0 100 0 / 0.1) !important; */
+  }
+  
+  body {
+	font-family: 'Open Sans', sans-serif !important;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none; 
+	margin: 0; 
+  }
+  
+  .embla {
+	--slide-spacing: 1rem;
+	--slide-size: 100%;
+  }
+  .embla__viewport {
+	overflow: hidden;
+  }
+  .embla__container {
+	backface-visibility: hidden;
+	display: flex;
+	touch-action: pan-y;
+	flex-direction: row;
+	height: auto;
+	margin-left: calc(var(--slide-spacing) * -1);
+  }
+  .embla__slide {
+	flex: 0 0 var(--slide-size);
+	min-width: 0;
+	padding-left: var(--slide-spacing);
+	position: relative;
+  }
+  .embla__slide__trhee {
+	flex: 0 0 var(--slide-size);
+	min-width: 0;
+	padding-left: var(--slide-spacing);
+	position: relative;
+  }
+  .embla__slide__img {
+	display: block;
+	height: auto;
+	width: 100%;
+	object-fit: cover;
+  }
+  .embla__dot,
+  .embla__button {
+	-webkit-appearance: none;
+	background-color: transparent;
+	touch-action: manipulation;
+	display: inline-flex;
+	text-decoration: none;
+	cursor: pointer;
+	border: 0;
+	padding: 0;
+	margin: 0;
+  }
+  .embla__dots {
+	/* z-index: 1; */
+	bottom: .5rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .embla__dot {
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+  }
+  .embla__dot:after {
+	background: #fff;
+	border-radius: 50%;
+	width: .7rem;
+	height: .7rem;
+	content: '';
+  }
+  .embla__dot--selected:after {
+	background: #ee122c;
+  }
+  .embla__button {
+	/* z-index: 1; */
+	color: #ee122c;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	width: 4rem;
+	height: 4rem;
+  }
+  .embla__button--prev {
+	left: 0;
+  }
+  .embla__button--next {
+	right: 0;
+  }
+  .embla__button:disabled {
+	opacity: 0.3;
+  }
+  .embla__button__svg {
+	width: 65%;
+	height: 65%;
+  }
+  
+  .section-button.selected {
+	background: #fff;
+	color: #ee122c;
+  }
+  
+  .modal {
+	transform: scale(0);
+	opacity: 0;
+  }
+  
+  .modal.active {
+	transform: scale(1);
+	opacity: 1;
+  }
+  
+  .loader {
+	width: 16px;
+	height: 16px;
+	border: 5px solid #FFF;
+	border-bottom-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  } 
+  
+  @media not all and (max-width: 767px) { 
+	.mobile {
+	  display: none;
+	}
+  }
+  
+  @media not all and (min-width: 768px) { 
+	.desktop {
+	  display: none;
+	}
+  }
+  
+  @media screen and (min-width: 769px) {
+	.embla__slide__trhee {
+	  flex: 0 0 calc(100% / 3);
+	  min-width: 0;
+	  padding-left: var(--slide-spacing);
+	  position: relative;
+	}
+  }
+</style>
