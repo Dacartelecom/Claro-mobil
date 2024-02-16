@@ -5,4 +5,5 @@ export interface FormProps {
   textLabel?: string
   classNameButton?: string
   children: ReactNode
+  modal:boolean
 }

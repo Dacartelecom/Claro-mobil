@@ -26,17 +26,23 @@ export interface PlanProps {
   promo: string
   price: number | 0 | string
   regular?: string
+  noHeader?:boolean 
+  tabble?:boolean
   plan: string
   extraPlan?: ReactNode
   data: ArrayDataPlan
   details?: ReactNode
+  src?: string | StaticImageData
+  alt?: string
+  width?: number
+  height?: number
 }
 
 export interface ArrayPlanProps extends Array<PlanProps> {}
 
 export interface dataPlan {
-  description: string
-  strong?: string | ReactNode
+  description: string | ReactNode,
+  strong?: string | ReactNode,
 }
 
 export interface ArrayDataPlan extends Array<dataPlan> {}

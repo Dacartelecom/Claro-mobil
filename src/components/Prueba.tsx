@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import './Global.css'
+
 export const Prueba = () => {
     const [activeTab, setActiveTab] = useState(1);
 

@@ -3,23 +3,27 @@ import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import  Notiscript  from '../components/Notiscript.astro';
 import { SelectPlan } from '../components/SelectPlan';
-
-interface Props {
-	title: string;
-}
-
+import Tag from '../components/Tag.astro';
 const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
+	<head id="tag">
+		<Tag/>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	  />
 	</head>
 	<body>
 		<Header client:only="react"/>
@@ -166,7 +170,7 @@ const { title } = Astro.props;
   .loader {
 	width: 16px;
 	height: 16px;
-	border: 5px solid #FFF;
+	border: 5px solid #EF3829;
 	border-bottom-color: transparent;
 	border-radius: 50%;
 	display: inline-block;
@@ -203,4 +207,28 @@ const { title } = Astro.props;
 	  position: relative;
 	}
   }
+
+  /* Color del fondo del scrollbar */
+::-webkit-scrollbar {
+    background-color: #000000; /* Cambia el color según tus preferencias */
+	width: 6px; 
+}
+
+/* Color del fondo del scrollbar en hover */
+::-webkit-scrollbar:hover {
+    background-color: #000000; /* Cambia el color según tus preferencias */
+}
+
+/* Color del borde del scrollbar */
+::-webkit-scrollbar-thumb {
+    border-radius: 6px; /* Ajusta el redondeo según tus preferencias */
+    background-color: #EF3829; /* Cambia el color según tus preferencias */
+}
+
+/* Color del borde del scrollbar en hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #EF3829; /* Cambia el color según tus preferencias */
+}
+
+
 </style>

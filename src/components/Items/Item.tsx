@@ -58,7 +58,7 @@ const Item: FC<ItemProps> = ({
       }}
     >
       <div
-        className={`relative flex items-center justify-center h-[60px] py-4 text-base font-extrabold uppercase transition-all duration-500 m-auto max-lg:w-[335px] max-lg:text-white lg:bg-transparent lg:font-bold ${ selected ? 'lg:border-b-0' : 'lg:border-b' } lg:border-gray-400 lg:hover:border-b-0 lg:after:absolute lg:after:left-1/2 lg:after:bottom-[0px] lg:after:translate-x-[-50%] ${ selected ? 'lg:after:w-full' : 'lg:after:w-0' } lg:after:h-[6px] lg:after:rounded-full lg:after:bg-[#ee122c] lg:after:transition-all lg:after:duration-300 lg:hover:after:w-full lg:before:absolute lg:before:left-1/2 lg:before:bottom-[-12.5px] lg:before:translate-x-[-50%] lg:before:bg-[#ee122c] lg:before:rounded-full ${ selected ? 'lg:before:w-[25px] lg:before:h-[25px]' : 'lg:before:w-0 lg:before:h-0' }`}
+        className={`relative flex items-center justify-center h-[60px] py-4 text-base font-extrabold uppercase transition-all duration-500 m-auto max-lg:w-[335px] max-lg:text-white lg:bg-transparent lg:font-bold ${ selected ? 'lg:border-b-0' : 'lg:border-b' } lg:border-gray-400 lg:hover:border-b-0 lg:after:absolute lg:after:left-1/2 lg:after:bottom-[0px] lg:after:translate-x-[-50%] ${ selected ? 'lg:after:w-full' : 'lg:after:w-0' } lg:after:h-[6px] lg:after:rounded-full lg:after:bg-[#ee122c] lg:after:transition-all lg:after:duration-300 lg:hover:after:w-full lg:before:absolute lg:before:left-1/2 lg:before:bottom-[-12.5px] lg:before:translate-x-[-50%] lg:before:bg-[#ee122c] lg:before:rounded-full`}
         onClick={ onClick }
         style={{
           background,
@@ -66,9 +66,9 @@ const Item: FC<ItemProps> = ({
         }}
       >
         <i className={`absolute left-4 fa-solid fa-${ selected ? 'minus' : 'plus' } lg:hidden`}></i>
-        <h4 className="text-center">{ title }</h4>
+        <h4 className={`text-center ${ selected ? 'text-[#EF3829] max-lg:text-white' : '' }`}>{ title }</h4>
       </div>
-      <div className="m-auto max-lg:overflow-hidden max-lg:w-[335px] max-lg:h-[290px] max-lg:overflow-y-auto max-lg:py-4 max-lg:px-8">
+      <div className="w-full m-auto max-lg:overflow-hidden max-lg:w-[335px] max-lg:h-[290px] max-lg:overflow-y-auto max-lg:py-4 max-lg:px-8">
         {
           message &&
           <h5 className="text-center text-gray-600 mb-8">
@@ -79,7 +79,7 @@ const Item: FC<ItemProps> = ({
             { message.text }
           </h5>
         }
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col">
           {
             planes.map((item, index) => {
               const {
@@ -90,6 +90,12 @@ const Item: FC<ItemProps> = ({
                 price,
                 details,
                 regular,
+                src,
+                alt,
+                width,
+                height,
+                noHeader,
+                tabble
               } = item;
 
               return (
@@ -102,6 +108,12 @@ const Item: FC<ItemProps> = ({
                   extraPlan={ extraPlan }
                   data={ data }
                   details={ details }
+                  src={src}
+                  alt={alt}
+                  width={width}
+                  height={height}
+                  noHeader={noHeader}
+                  tabble={tabble}
                 />
               )
             })

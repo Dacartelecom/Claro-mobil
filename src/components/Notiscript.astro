@@ -5,28 +5,14 @@
 </noscript>
 
 <script>
-  const urlDelSitio = window.location.href;
-  const nombreDelDominio = urlDelSitio.replace(/^https?:\/\/(?:www\.)?/, '').split('/')[0];
-
   const condicion = document.getElementById('noscript');
-
   if (condicion) {
-    if (nombreDelDominio.includes("clarofertas")) {
       condicion.innerHTML = `
-        <!-- Google Tag Manager (noscript) -->
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTH3TCB"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        <!-- End Google Tag Manager (noscript) -->
+      <!-- Google Tag Manager (noscript) -->
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDNQCB2D"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      <!-- End Google Tag Manager (noscript) -->
       `;
-    } else {
-      condicion.innerHTML = `
-        <!-- Google Tag Manager (noscript) -->
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDHM665"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        <!-- End Google Tag Manager (noscript) -->
-      `;
-    }
-
   }
 
 </script>

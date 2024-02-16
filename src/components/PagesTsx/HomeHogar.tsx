@@ -1,17 +1,17 @@
 import type { EmblaOptionsType } from "embla-carousel-react";
 import type { CSSProperties } from "react";
-import BannerDesktop1 from "../../../public/img/moviles-banner-desktop-2.webp";
-import BannerDesktop2 from "../../../public/img/moviles-banner-desktop-3.webp";
-import BannerDesktop3 from "../../../public/img/moviles-banner-desktop-4.webp";
-import BannerMobile1 from "../../../public/img/moviles-banner-mobile-2.webp";
-import BannerMobile2 from "../../../public/img/moviles-banner-mobile-3.webp";
-import BannerMobile3 from "../../../public/img/moviles-banner-mobile-4.webp";
+import BannerDesktop1 from "../../../public/img/Hogar-banner-1.webp";
+import BannerDesktop2 from "../../../public/img/Hogar-banner-2.webp";
+import BannerDesktop3 from "../../../public/img/Hogar-banner-3.webp";
+import BannerDesktop4 from "../../../public/img/Hogar-banner-4.webp";
+import BannerMobile1 from "../../../public/img/Hogar-banner-mobile-1.webp";
+import BannerMobile2 from "../../../public/img/Hogar-banner-mobile-2.webp";
+import BannerMobile3 from "../../../public/img/Hogar-banner-mobile-3.webp";
+import BannerMobile4 from "../../../public/img/Hogar-banner-mobile-4.webp";
 import Carousel from "../Carousel/Carousel";
 import { Form } from "../Form";
 import Items from "../Items/Items";
-import icon from '../../../public/img/mob.svg'
-import SocialMedia1 from '../../../public/img/redesSociales.png'
-import SocialMedia2 from '../../../public/img/redesSociales2.png'
+import icon from '../../../public/img/home.svg'
 import type { ItemsArray } from "../../interfaces/Items.props";
 
 const OPTIONS: EmblaOptionsType = {
@@ -19,7 +19,7 @@ const OPTIONS: EmblaOptionsType = {
   slidesToScroll: 'auto',
   containScroll: 'trimSnaps'
 };
-const SLIDE_COUNT = 3;
+const SLIDE_COUNT = 4;
 const SLIDES: number[] = Array.from(Array(SLIDE_COUNT).keys());
 const STYLES_MOBILE: CSSProperties = {};
 const STYLES_DESKTOP: CSSProperties = {};
@@ -28,349 +28,565 @@ const imagesMobile = [
   `${BannerMobile1.src}`,
   `${BannerMobile2.src}`,
   `${BannerMobile3.src}`,
+  `${BannerMobile4.src}`,
 ];
 
 const imagesDesktop = [
   `${BannerDesktop1.src}`,
   `${BannerDesktop2.src}`,
   `${BannerDesktop3.src}`,
+  `${BannerDesktop4.src}`,
 ];
 
 const ItemsPlanes: ItemsArray = [
   {
-    title: 'Planes Max',
+    title: 'INTERNET HFC / FTTH',
     message: {
-      strong: 'Porta o adquiere dos o más líneas desde el Plan MAX 55.90 y obtén 50 % de descuento por 12 meses en todas las líneas adicionales con el menor cargo fijo.',
+      strong: '¡Atención! Seguimos con el S/ 0 costo de instalación a nivel nacional',
       text: '',
-      strong2: 'Válido para clientes nuevos y actuales'
+      strong2: '(Sujeto a evaluación crediticia)'
     },
     planes: [
       {
-        plan: 'Max',
-        extraPlan: <span>25 GB</span>,
-        promo: 'Costo Mensual',
-        price: '39.90',
-        noHeader: false,
-        regular: '',
-        data: [
-          {
-            strong: '37.5 GB',
-            description: 'Gigas con Full Claro',
-          },
-          {
-            strong: '350 minutos',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Minutos y SMS Nacionales',
-          }, {
-            strong: 'Redes Sociales Ilimitadas',
-            description: <div className="w-full h-auto">
-              <img
-                src={`${SocialMedia1.src}`}
-                alt={'Redes Sociales Ilimitadas'}
-                className="w-[180px] h-auto object-cover mt-3"
-              />
-            </div>,
-          },
-        ]
-      },
-      {
-        plan: 'Max',
-        extraPlan: <span>35 GB</span>,
-        promo: 'Costo Mensual',
-        price: '49.90',
-        noHeader: false,
-        regular: '',
-        data: [
-          {
-            strong: '52.5 GB',
-            description: 'Gigas con Full Claro',
-          },
-          {
-            strong: '400 minutos',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Minutos y SMS Nacionales',
-          }, {
-            strong: 'Redes Sociales Ilimitadas',
-            description: <div className="w-full h-auto">
-              <img
-                src={`${SocialMedia2.src}`}
-                alt={'Redes Sociales Ilimitadas'}
-                className="w-[180px] h-auto object-cover mt-3"
-              />
-            </div>,
-          },
-        ]
-      },
-      {
-        plan: 'Max',
-        extraPlan: <span>65 GB</span>,
+        plan: '1 PLAY',
+        extraPlan: <span>150 MBPS</span>,
         promo: 'Precio Regular',
-        price: '55.90',
+        price: '65',
         noHeader: false,
         regular: '',
         data: [
           {
-            strong: '97.5 GB',
-            description: 'Gigas con Full Claro',
+            strong: '150 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
           },
           {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
-          }, {
-            strong: 'Redes Sociales Ilimitadas',
-            description: <div className="w-full h-auto">
-              <img
-                src={`${SocialMedia2.src}`}
-                alt={'Redes Sociales Ilimitadas'}
-                className="w-[180px] h-auto object-cover mt-3"
-              />
-            </div>,
-          },
-        ]
-      },
-      {
-        plan: 'Max',
-        extraPlan: <span>95 GB</span>,
-        promo: 'Costo Mensual',
-        price: '69.90',
-        noHeader: false,
-        regular: '',
-        data: [
-          {
-            strong: '142.5 GB',
-            description: 'Gigas con Full Claro',
-          },
-          {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            strong: '300 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
           }
         ]
       },
       {
-        plan: 'Max',
-        extraPlan: <span>105 GB</span>,
-        promo: 'Costo Mensual',
-        price: '79.90',
+        plan: '1 PLAY',
+        extraPlan: <span>250 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '75',
         noHeader: false,
         regular: '',
         data: [
           {
-            strong: '157.5 GB',
-            description: 'Gigas con Full Claro',
+            strong: '250 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
           },
           {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            strong: '500 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
           }
         ]
-      }, {
-        plan: 'Max',
-        extraPlan: <span>130 GB</span>,
-        promo: 'Costo Mensual',
-        price: '95.90',
+      },
+      {
+        plan: '1PLAY',
+        extraPlan: <span>400 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '85',
         noHeader: false,
         regular: '',
         data: [
           {
-            strong: '195 GB',
-            description: 'Gigas con Full Claro',
+            strong: '400 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
           },
           {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            strong: '800 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
           }
         ]
-      }, {
-        plan: 'Max',
-        extraPlan: <span>160 GB</span>,
-        promo: 'Costo Mensual',
-        price: '109.90',
+      },
+      {
+        plan: '1 PLAY',
+        extraPlan: <span>600 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '100',
         noHeader: false,
         regular: '',
         data: [
           {
-            strong: '210 GB',
-            description: 'Gigas con Full Claro',
+            strong: '600 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
           },
           {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            strong: '1000 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
           }
         ]
-      }, {
-        plan: 'Max',
-        extraPlan: <span>180 GB</span>,
-        promo: 'Costo Mensual',
-        price: '159.90',
+      },
+      {
+        plan: '1 PLAY',
+        extraPlan: <span>1000 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '65',
         noHeader: false,
         regular: '',
         data: [
           {
-            strong: '240 GB',
-            description: 'Gigas con Full Claro',
-          },
-          {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            strong: '1000 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
           }
         ]
-      }, {
-        plan: 'Max',
-        extraPlan: <span>190 GB</span>,
-        promo: 'Costo Mensual',
-        price: '189.90',
+      }, 
+      {
+        plan: '1 PLAY',
+        extraPlan: <span>1500 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '200',
         noHeader: false,
         regular: '',
         data: [
           {
-            strong: '270 GB',
-            description: 'Gigas con Full Claro',
-          },
-          {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            strong: '1500 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
           }
         ]
-      }, {
-        plan: 'Max',
-        extraPlan: <span>190 GB</span>,
-        promo: 'Costo Mensual',
-        price: '289.90',
+      }
+    ]
+  },
+  {
+    title: 'INTERNET + TELEFONÍA',
+    message: {
+      strong: '¡Atención! Seguimos con el S/ 0 costo de instalación a nivel nacional',
+      text: '',
+      strong2: '(Sujeto a evaluación crediticia)'
+    },
+    planes: [
+      {
+        plan: '2 PLAY',
+        extraPlan: <span>150 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '70',
         noHeader: false,
         regular: '',
         data: [
           {
-            strong: '285 GB',
-            description: 'Gigas con Full Claro',
+            strong: '150 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
           },
           {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
+            strong: '300 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
           },
           {
-            strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          }
+        ]
+      },
+      {
+        plan: '2 PLAY',
+        extraPlan: <span>250 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '80',
+        noHeader: false,
+        regular: '',
+        data: [
+          {
+            strong: '250 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: '500 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+          },
+          {
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          }
+        ]
+      },
+      {
+        plan: '2 PLAY',
+        extraPlan: <span>400 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '90',
+        noHeader: false,
+        regular: '',
+        data: [
+          {
+            strong: '400 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: '800 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+          },
+          {
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          }
+        ]
+      },
+      {
+        plan: '2 PLAY',
+        extraPlan: <span>600 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '105',
+        noHeader: false,
+        regular: '',
+        data: [
+          {
+            strong: '600 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: '1000 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+          },
+          {
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          }
+        ]
+      },
+      {
+        plan: '2 PLAY',
+        extraPlan: <span>1000 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '150',
+        noHeader: false,
+        regular: '',
+        data: [
+          {
+            strong: '1000 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          }
+        ]
+      },
+      {
+        plan: '2 PLAY',
+        extraPlan: <span>1500 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '205',
+        noHeader: false,
+        regular: '',
+        data: [
+          {
+            strong: '1500 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
           }
         ]
       },
     ]
   },
   {
-    title: 'PLANES MAX PLAY CON NETFLIX',
+    title: 'INTERNET + TELEVISIÓN',
     message: {
-      strong: '',
-      text: ''
+      strong: '¡Atención! Seguimos con el S/ 0 costo de instalación a nivel nacional',
+      text: '',
+      strong2: '(Sujeto a evaluación crediticia)'
     },
     planes: [
       {
-        plan: 'Max + Netflix',
-        extraPlan: <span>55 GB</span>,
-        promo: 'Costo Mensual',
+        plan: '2 PLAY',
+        extraPlan: <span>150 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '125',
         noHeader: false,
-        price: '95',
+        regular: '',
         data: [
           {
-            strong: '82.5 GB',
-            description: 'Gigas con Full Claro',
+            strong: '150 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
           },
           {
-            strong: 'Netflix',
-            description: '2 Pantallas HD',
+            strong: '300 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
           },
           {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Gigas, Minutos Nacionales y SMS',
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
           }
         ]
       },
       {
-        plan: 'Max + Netflix',
-        extraPlan: <span>100 GB</span>,
-        promo: 'Costo Mensual',
+        plan: '2 PLAY',
+        extraPlan: <span>250 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '135',
         noHeader: false,
-        price: '115',
+        regular: '',
         data: [
           {
-            strong: '150  GB',
-            description: 'Gigas con Full Claro',
+            strong: '250 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
           },
           {
-            strong: 'Netflix',
-            description: '4 Pantallas HD, Ultra HD o 4K',
+            strong: '500 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
           },
           {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Gigas, Minutos Nacionales y SMS',
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
           }
         ]
       },
       {
-        plan: 'Max + Netflix',
-        extraPlan: <span>145 GB</span>,
-        promo: 'Costo Mensual',
-        noHeader: false,
+        plan: '2 PLAY',
+        extraPlan: <span>150 MBPS</span>,
+        promo: 'Precio Regular',
         price: '145',
+        noHeader: false,
+        regular: '',
         data: [
           {
-            strong: '217.5 GB',
-            description: 'Gigas con Full Claro',
+            strong: '400 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
           },
           {
-            strong: 'Netflix',
-            description: '4 Pantallas HD, Ultra HD o 4K',
+            strong: '800 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
           },
           {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
-          },
-          {
-            strong: 'ILIMITADO',
-            description: 'Gigas, Minutos Nacionales y SMS',
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
           }
         ]
-      }
+      },
+      {
+        plan: '2 PLAY',
+        extraPlan: <span>600 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '160',
+        noHeader: false,
+        regular: '',
+        data: [
+          {
+            strong: '600 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: '1000 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+          },
+          {
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
+          }
+        ]
+      },
+      {
+        plan: '2 PLAY',
+        extraPlan: <span>1000 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '205',
+        noHeader: false,
+        regular: '',
+        data: [
+          {
+            strong: '1000 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
+          }
+        ]
+      },
+      {
+        plan: '2 PLAY',
+        extraPlan: <span>1500 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '260',
+        noHeader: false,
+        regular: '',
+        data: [
+          {
+            strong: '1500 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
+          }
+        ]
+      },
+    ]
+  },
+  {
+    title: 'INTERNET + TELEFONÍA + TV',
+    message: {
+      strong: '¡Atención! Seguimos con el S/ 0 costo de instalación a nivel nacional',
+      text: '',
+      strong2: '(Sujeto a evaluación crediticia)'
+    },
+    planes: [
+      {
+        plan: '3 PLAY',
+        extraPlan: <span>150 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '135',
+        noHeader: false,
+        regular: '',
+        tabble:true,
+        data: [
+          {
+            strong: '150 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: '300 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+          },
+          {
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
+          },
+          {
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          }
+        ]
+      },
+      {
+        plan: '3 PLAY',
+        extraPlan: <span>250 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '145',
+        noHeader: false,
+        regular: '',
+        tabble:true,
+        data: [
+          {
+            strong: '250 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: '500 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+          },
+          {
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
+          },
+          {
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          }
+        ]
+      },
+      {
+        plan: '3 PLAY',
+        extraPlan: <span>400 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '150',
+        noHeader: false,
+        regular: '',
+        tabble:true,
+        data: [
+          {
+            strong: '400 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: '800 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+          },
+          {
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
+          },
+          {
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          }
+        ]
+      },
+      {
+        plan: '3 PLAY',
+        extraPlan: <span>600 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '165',
+        noHeader: false,
+        regular: '',
+        tabble:true,
+        data: [
+          {
+            strong: '600 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: '1000 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+          },
+          {
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
+          },
+          {
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          }
+        ]
+      },
+      {
+        plan: '3 PLAY',
+        extraPlan: <span>1000 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '210',
+        noHeader: false,
+        regular: '',
+        tabble:true,
+        data: [
+          {
+            strong: '1000 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
+          },
+          {
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
+          }
+        ]
+      },
+      {
+        plan: '3 PLAY',
+        extraPlan: <span>1500 MBPS</span>,
+        promo: 'Precio Regular',
+        price: '265',
+        noHeader: false,
+        regular: '',
+        tabble:true,
+        data: [
+          {
+            strong: '1500 Mbps',
+            description: 'Velocidad máxima de Bajada/Subida',
+          },
+          {
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
+          },
+          {
+            strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
+            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: 'Claro TV Avanzado',
+            description: 'Incluye 111 canales en HD.',
+          }
+        ]
+      },
     ]
   },
   // {
@@ -985,7 +1201,7 @@ const ItemsPlanes: ItemsArray = [
 
 ];
 
-export default function HomeMovil() {
+export default function HomeHogar() {
   return (
     <section className="relative flex flex-col items-center gap-2 min-h-[1000px]">
       <Carousel

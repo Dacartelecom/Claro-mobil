@@ -40,7 +40,7 @@ const Items: FC<ItemsProps> = ({
       <div>
         {
           arrayItems[selected].message &&
-          <h5 className="text-center text-gray-600 mb-12">
+          <h5 className="text-center text-gray-600 mb-12 text-[18px]">
             {
               arrayItems[selected].message?.strong &&
               <strong>{ arrayItems[selected].message?.strong } 
@@ -54,7 +54,7 @@ const Items: FC<ItemsProps> = ({
           </h5>
         }
         <div
-          className={`flex flex-wrap justify-center items-start ${ arrayItems[selected].ifGrid ? 'grid' : '' } gap-10 mx-20 mt-4 mb-12 max-lg:hidden`}
+          className={`flex flex-wrap justify-center items-start ${ arrayItems[selected].ifGrid ? 'grid' : '' } gap-5 mx-20 mt-4 mb-12 max-lg:hidden`}
           style={{
             gridTemplateColumns: `repeat(${ arrayItems[selected].gridCols }, 1fr)`,
             gridTemplateRows: `repeat(${ arrayItems[selected].gridRows }, 1fr)`
@@ -69,7 +69,13 @@ const Items: FC<ItemsProps> = ({
                 plan,
                 extraPlan,
                 data,
-                details
+                details,
+                src,
+                alt,
+                width,
+                height,
+                noHeader,
+                tabble
               } = item;
 
               return (
@@ -82,6 +88,12 @@ const Items: FC<ItemsProps> = ({
                   extraPlan={ extraPlan }
                   data={ data }
                   details={ details }
+                  src={src}
+                  alt={alt}
+                  width={width}
+                  height={height}
+                  noHeader={noHeader}
+                  tabble={tabble}
                 />
               )
             })
