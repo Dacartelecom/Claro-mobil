@@ -125,7 +125,7 @@ const ItemsPlanes: ItemsArray = [
           },
           {
             strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            description: 'Minutos y SMS Nacionales + Llamadas Internacionales',
           }, {
             strong: 'Redes Sociales Ilimitadas',
             description: <div className="w-full h-auto">
@@ -148,7 +148,7 @@ const ItemsPlanes: ItemsArray = [
         data: [
           {
             strong: '142.5 GB',
-            description: 'Gigas con Full Claro',
+            description: 'Gigas en alta velocidad con Full Claro',
           },
           {
             strong: 'Ilimitados',
@@ -156,7 +156,7 @@ const ItemsPlanes: ItemsArray = [
           },
           {
             strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            description: 'Gigas + Minutos + SMS Nacionales y Llamadas Internacionales',
           }
         ]
       },
@@ -170,7 +170,7 @@ const ItemsPlanes: ItemsArray = [
         data: [
           {
             strong: '157.5 GB',
-            description: 'Gigas con Full Claro',
+            description: 'Gigas en alta velocidad con Full Claro',
           },
           {
             strong: 'Ilimitados',
@@ -178,7 +178,7 @@ const ItemsPlanes: ItemsArray = [
           },
           {
             strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            description: 'Gigas + Minutos + SMS Nacionales y Llamadas Internacionales',
           }
         ]
       }, {
@@ -191,7 +191,7 @@ const ItemsPlanes: ItemsArray = [
         data: [
           {
             strong: '195 GB',
-            description: 'Gigas con Full Claro',
+            description: 'Gigas en alta velocidad con Full Claro',
           },
           {
             strong: 'Ilimitados',
@@ -199,12 +199,12 @@ const ItemsPlanes: ItemsArray = [
           },
           {
             strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            description: 'Gigas + Minutos + SMS Nacionales y Llamadas Internacionales',
           }
         ]
       }, {
         plan: 'Max',
-        extraPlan: <span>160 GB</span>,
+        extraPlan: <span>140 GB</span>,
         promo: 'Costo Mensual',
         price: '109.90',
         noHeader: false,
@@ -212,7 +212,7 @@ const ItemsPlanes: ItemsArray = [
         data: [
           {
             strong: '210 GB',
-            description: 'Gigas con Full Claro',
+            description: 'Gigas en alta velocidad con Full Claro',
           },
           {
             strong: 'Ilimitados',
@@ -220,12 +220,12 @@ const ItemsPlanes: ItemsArray = [
           },
           {
             strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            description: 'Gigas + Minutos + SMS Nacionales y Llamadas Internacionales',
           }
         ]
       }, {
         plan: 'Max',
-        extraPlan: <span>180 GB</span>,
+        extraPlan: <span>160 GB</span>,
         promo: 'Costo Mensual',
         price: '159.90',
         noHeader: false,
@@ -233,7 +233,7 @@ const ItemsPlanes: ItemsArray = [
         data: [
           {
             strong: '240 GB',
-            description: 'Gigas con Full Claro',
+            description: 'Gigas en alta velocidad con Full Claro',
           },
           {
             strong: 'Ilimitados',
@@ -241,12 +241,12 @@ const ItemsPlanes: ItemsArray = [
           },
           {
             strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            description: 'Gigas + Minutos + SMS Nacionales y Llamadas Internacionales',
           }
         ]
       }, {
         plan: 'Max',
-        extraPlan: <span>190 GB</span>,
+        extraPlan: <span>180 GB</span>,
         promo: 'Costo Mensual',
         price: '189.90',
         noHeader: false,
@@ -254,7 +254,7 @@ const ItemsPlanes: ItemsArray = [
         data: [
           {
             strong: '270 GB',
-            description: 'Gigas con Full Claro',
+            description: 'Gigas en alta velocidad con Full Claro',
           },
           {
             strong: 'Ilimitados',
@@ -262,7 +262,7 @@ const ItemsPlanes: ItemsArray = [
           },
           {
             strong: 'ILIMITADO',
-            description: 'Minutos + SMS Nacionales y Llamadas Internacionales',
+            description: 'Gigas + Minutos + SMS Nacionales y Llamadas Internacionales',
           }
         ]
       }, {
@@ -1020,7 +1020,7 @@ export default function HomeMovil() {
           <span className='text-[25px] max-lg:text-[20px]'> ¡Consulta por la promoción en PORTABILIDAD que tenemos para ti! </span>
         </div>
       </Form>
-      <h3 className="text-[18px] text-center text-gray-500 font-bold my-[30px]">Todas las Ofertas y Promociones vigentes hasta el 29/02/2024 </h3>
+      <h3 className="text-[18px] text-center text-gray-500 font-bold my-[30px]">Todas las Ofertas y Promociones vigentes hasta el 31/03/2024 </h3>
       <div className="flex items-center justify-center gap-2 mb-10">
         <div className="bg-[#ee122c] w-24 h-1 mt-2"></div>
         <img className="w-[50px] mx-4" src={icon.src} alt="icon" />
