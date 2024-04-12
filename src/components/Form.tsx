@@ -151,7 +151,7 @@ export const Form: FC<FormProps> = ({
         console.log(response)
         console.log(lead)
         if (response.status === 'ERROR') {
-          interval('Estimado cliente el número debe tener 9 dígitos o esta mal colocado')
+          interval('Estimado cliente el número debe tener 9 dígitos o esta mal colocado.')
           setLoading(false);
         } else {
           interval('¡Gracias por contactarnos! En breve, un asesor se pondrá en contacto contigo.');
