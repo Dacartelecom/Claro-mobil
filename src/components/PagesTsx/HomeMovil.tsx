@@ -1,4 +1,3 @@
-import type { EmblaOptionsType } from "embla-carousel-react";
 import type { CSSProperties } from "react";
 import BannerDesktop1 from "../../../public/img/moviles-banner-desktop-2.webp";
 import BannerDesktop2 from "../../../public/img/moviles-banner-desktop-3.webp";
@@ -13,7 +12,7 @@ import { Form } from "../Form";
 import icon from '../../../public/img/mob.svg'
 import { SelecteplanMobil } from "../Items/Selecteplan";
 
-const OPTIONS: EmblaOptionsType = {
+const OPTIONS: any = {
   loop: true,
   slidesToScroll: 'auto',
   containScroll: 'trimSnaps'
@@ -24,6 +23,7 @@ const STYLES_MOBILE: CSSProperties = {};
 const STYLES_DESKTOP: CSSProperties = {};
 
 const imagesMobile = [
+  'https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/IMG-BANNER-17-MOBBILE.webp?alt=media&token=88db8340-8432-4291-8880-599639c29ca2',
   `${BannerMobile1.src}`,
   `${BannerMobile2.src}`,
   `${BannerMobile3.src}`,
@@ -31,6 +31,7 @@ const imagesMobile = [
 ];
 
 const imagesDesktop = [
+  'https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/IMG-BANNER-17.webp?alt=media&token=2d11ef7f-99eb-406b-a1f6-1ff567f87afd',
   `${BannerDesktop1.src}`,
   `${BannerDesktop2.src}`,
   `${BannerDesktop3.src}`,
@@ -72,7 +73,7 @@ export default function HomeMovil() {
           <span className='text-[25px] max-lg:text-[20px]'> ¡Consulta por la promoción en PORTABILIDAD que tenemos para ti! </span>
         </div>
       </Form>
-      <h3 className="text-[18px] text-center text-gray-500 font-bold my-[30px]">Todas las Ofertas y Promociones vigentes hasta el 15/04/2024 </h3>
+      <h3 className="text-[18px] text-center text-gray-500 font-bold my-[30px]">Todas las Ofertas y Promociones vigentes hasta el 30/04/2024 </h3>
       <div className="flex items-center justify-center gap-2 mb-10">
         <div className="bg-[#ee122c] w-24 h-1 mt-2"></div>
         <img className="w-[50px] mx-4" src={icon.src} alt="icon" />

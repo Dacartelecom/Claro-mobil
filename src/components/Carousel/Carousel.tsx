@@ -1,5 +1,5 @@
 import { type FC, useCallback, useEffect, useState } from 'react';
-import useEmblaCarousel, { type EmblaCarouselType } from 'embla-carousel-react';
+import useEmblaCarousel from 'embla-carousel-react';
 import { NextButton, PrevButton } from './ArrowButtons';
 import { DotButton } from './DotButton';
 import imageByIndex from '../../utils/ImageByIndex';
@@ -33,12 +33,12 @@ const Carousel: FC<CarouselProps> = ({
     emblaApi && emblaApi.scrollTo(index)
   }, [emblaApi])
 
-  const onInit = useCallback((emblaApi: EmblaCarouselType) => {
+  const onInit = useCallback((emblaApi: any) => {
     // console.log(emblaApi.slidesInView(), 'init')
     setScrollSnaps(emblaApi.scrollSnapList())
   }, [])
 
-  const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
+  const onSelect = useCallback((emblaApi: any) => {
     // console.log(emblaApi.slidesInView(), 'select')
     setSelectedIndex(emblaApi.selectedScrollSnap())
     setPrevBtnEnabled(emblaApi.canScrollPrev())

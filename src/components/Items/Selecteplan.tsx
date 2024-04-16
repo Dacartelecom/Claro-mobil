@@ -928,13 +928,13 @@ export const SelecteplanMobil = () => {
     const PLANES_NETFLIX=[
       {
         plan: 'Max + Netflix',
-        extraPlan: <span>55 GB</span>,
+        extraPlan: <span>70 GB</span>,
         promo: 'Costo Mensual',
         noHeader: false,
         price: '95',
         data: [
           {
-            strong: '82.5 GB',
+            strong: '105 GB',
             description: 'Gigas con Full Claro',
           },
           {
@@ -942,8 +942,8 @@ export const SelecteplanMobil = () => {
             description: '2 Pantallas HD',
           },
           {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
+            strong: 'Cobertura internacional',
+            description: '300 minutos, 3GB DE internet y 300 SMS',
           },
           {
             strong: 'ILIMITADO',
@@ -967,8 +967,8 @@ export const SelecteplanMobil = () => {
             description: '4 Pantallas HD, Ultra HD o 4K',
           },
           {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
+            strong: 'Cobertura internacional',
+            description: '350 minutos, 3.5GB DE internet y 350 SMS',
           },
           {
             strong: 'ILIMITADO',
@@ -992,8 +992,8 @@ export const SelecteplanMobil = () => {
             description: '4 Pantallas HD, Ultra HD o 4K',
           },
           {
-            strong: 'Ilimitados',
-            description: 'Minutos Internacionales',
+            strong: 'Cobertura internacional',
+            description: '450 minutos, 10GB DE internet y 450 SMS',
           },
           {
             strong: 'ILIMITADO',
@@ -1001,7 +1001,7 @@ export const SelecteplanMobil = () => {
           }
         ]
       }
-    ]    
+    ]  
   return (
 <div className="w-full flex justify-center items-center flex-col">
 <div className='h-[50px] w-[800px] font-normal text-2xl flex justify-center max-lg:w-full max-lg:text-xl max-lg:flex-col max-lg:my-2 text-[#1F97AE]'>

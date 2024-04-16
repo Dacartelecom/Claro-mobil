@@ -1,6 +1,7 @@
 import { type ChangeEvent, type FC, useState } from "react";
 import type { FormProps } from "../interfaces/Form.props";
 import Modal from "./Modal/Modal";
+import axios from "axios";
 
 export const Form: FC<FormProps> = ({
   children,
@@ -47,7 +48,20 @@ export const Form: FC<FormProps> = ({
     }, 3000);
   }
 
-
+  const callMeNumber = async (number: string) => {
+    try {
+      const res = await axios.post('https://develzpbx.com:4004/call-me',{
+        number
+      },{
+        headers: {
+          "X-URL-Complete": window.location.href + '?T-source=01clarohogar'
+        }
+      });
+      console.log(res)
+    } catch (error) {
+      console.log(error)
+    };
+  };
 
   const sendNumber = (e: any) => {
     e.preventDefault();
@@ -56,6 +70,7 @@ export const Form: FC<FormProps> = ({
     const data = new URLSearchParams();
     let service = 'PeruHfcCallme'
 
+    callMeNumber(inputState)
 
     if (nombreDelDominio.includes("clarofertas")) {
       if (TSource === 'ext') {

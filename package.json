@@ -16,6 +16,7 @@
     "@types/react": "^18.2.51",
     "@types/react-dom": "^18.2.18",
     "astro": "^4.3.1",
+    "axios": "^1.6.8",
     "embla-carousel-react": "^8.0.0-rc22",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

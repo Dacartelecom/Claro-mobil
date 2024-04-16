@@ -1,4 +1,3 @@
-import type { StaticImageData } from "next/image"
 import type { MouseEventHandler, ReactNode } from "react"
 
 export interface ItemsProps {
@@ -32,7 +31,7 @@ export interface PlanProps {
   extraPlan?: ReactNode
   data: ArrayDataPlan
   details?: ReactNode
-  src?: string | StaticImageData
+  src?: string
   alt?: string
   width?: number
   height?: number
