@@ -627,7 +627,11 @@ export default function HomeHogar() {
           <span className='text-[25px] max-lg:text-[20px]'> ¡Consulta por la promoción en PORTABILIDAD que tenemos para ti! </span>
         </div>
       </Form>
+<<<<<<< HEAD
       <h3 className="text-[18px] text-center text-gray-500 font-bold my-[30px]">Todas las Ofertas y Promociones vigentes hasta el 15/04/2024 </h3>
+=======
+      <h3 className="text-[18px] text-center text-gray-500 font-bold my-[30px]">Todas las Ofertas y Promociones vigentes hasta el 31/03/2024 </h3>
+>>>>>>> d7f946abe1e4378aaa8ae24ad6a5302c33ffa83b
       <div className="flex items-center justify-center gap-2 mb-10">
         <div className="bg-[#ee122c] w-24 h-1 mt-2"></div>
         <img className="w-[50px] mx-4" src={icon.src} alt="icon" />
