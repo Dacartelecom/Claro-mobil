@@ -927,7 +927,7 @@ export const SelecteplanMobil = () => {
     ]
     const PLANES_NETFLIX=[
       {
-        plan: 'Max + Netflix',
+        plan: 'Plan Max Play 95 con Netflix',
         extraPlan: <span>70 GB</span>,
         promo: 'Costo Mensual',
         noHeader: false,
@@ -952,7 +952,7 @@ export const SelecteplanMobil = () => {
         ]
       },
       {
-        plan: 'Max + Netflix',
+        plan: 'Plan Max Play 115 con Netflix',
         extraPlan: <span>100 GB</span>,
         promo: 'Costo Mensual',
         noHeader: false,
@@ -977,7 +977,7 @@ export const SelecteplanMobil = () => {
         ]
       },
       {
-        plan: 'Max + Netflix',
+        plan: 'Plan Max Play 145 con Netflix',
         extraPlan: <span>145 GB</span>,
         promo: 'Costo Mensual',
         noHeader: false,
@@ -1001,7 +1001,7 @@ export const SelecteplanMobil = () => {
           }
         ]
       }
-    ]  
+    ] 
   return (
 <div className="w-full flex justify-center items-center flex-col">
 <div className='h-[50px] w-[800px] font-normal text-2xl flex justify-center max-lg:w-full max-lg:text-xl max-lg:flex-col max-lg:my-2 text-[#1F97AE]'>
