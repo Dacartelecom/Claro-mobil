@@ -75,7 +75,9 @@ export const Header = () => {
           <div><span>Distribuidor Autorizado de Claro</span></div>
         <div className=''><img className='w-[30px] max-lg:w-[20px]' src={ico.src} alt="calro" /></div>
         </span>
-        <span className='font-normal max-lg:text-[15px] text-[25px]'>Llámanos al <a href={`tel:${ number.tel }`}>{ number.num }</a></span>
+        <div className='flex max-lg:flex-col gap-2 max-lg:gap-0'>
+        <span className='font-normal max-lg:text-[15px] text-[25px]'>Llámanos al </span>  <a className='font-normal max-lg:text-[15px] text-[25px]' href={`tel:${ number.tel }`}>{ number.num }</a>
+        </div>
     </div>
   )
 }

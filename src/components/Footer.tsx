@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ClaroLogoWhite from '../../public/img/Teletalk-B.png'
 import Modal from "./Modal/Modal";
 import  facebook  from "../../public/img/facebook.svg";
 import  linkedin  from "../../public/img/in.svg";
@@ -75,7 +76,7 @@ export const Footer = () => {
 
     return (
         <>
-            <footer className='bg-black w-full h-[160px] m-auto max-lg:h-[240px]'>
+            <footer className='bg-black w-full h-[160px] m-auto max-lg:h-[370px]'>
                 <div className='w-[70%] max-lg:w-[90%]  h-full flex mx-auto flex-col text-white items-center justify-end gap-[10px] py-1 max-lg:flex-col'>
                     <div className='w-full flex justify-between max-lg:flex-col max-lg:justify-center'>
                         <div className='flex flex-col gap-[15px] max-lg:justify-center max-lg:items-center'>
@@ -85,6 +86,13 @@ export const Footer = () => {
                             <a href="https://www.instagram.com/planesmovilesperu/"><img className='w-[60px]' src={linkedin.src} alt="l" /></a>
                             </div>
                         </div>
+                        <div className="max-lg:flex max-lg:w-full max-lg:justify-center">
+                            <img
+                                src={`${ClaroLogoWhite.src}`}
+                                alt={'Logo Claro'}
+                                className="w-[180px] object-cover mt-10 max-lg:my-5"
+                                />
+                        </div>
                         <div className='flex flex-col text-right font-medium max-lg:justify-center max-lg:items-center'>
                             <span className='text-[20px] max-lg:text-[17px]'>Contáctanos en :</span> 
                             <span className='text-[55px] max-lg:text-[40px]'><a href={`tel:${number.tel}`} > {number.num}</a></span>
@@ -92,13 +100,14 @@ export const Footer = () => {
                     </div>
 
                     <div className='w-full flex justify-between max-lg:flex-col'>
-                        <div className="max-lg:w-full max-lg:text-center"><span className='text-[15px] max-lg:text-[12px]'>TELETALK S.A.C. © Distribuidor Oficial Claro</span></div>
-                        <div className='flex justify-center gap-[20px] text-[#1F97AE] max-lg:text-[12px]'>
-                            <span className="cursor-pointer duration-300 transition-all hover:text-[#85ebff]" onClick={() => setActiveModalTerms(true)}>Términos y Condiciones de la Web</span>
-                            <span className="cursor-pointer duration-300 transition-all hover:text-[#85ebff]" onClick={() => setActiveModalPolicy(true)}>Políticas de privacidad</span>
+                        <div className="max-lg:w-full max-lg:text-center">
+                            <span className='text-[15px] max-lg:text-[12px]'>TELETALK S.A.C. © Distribuidor Oficial Claro</span></div>
+                            <div className='flex justify-center gap-[20px] text-[#1F97AE] max-lg:text-[12px]'>
+                                <span className="cursor-pointer duration-300 transition-all hover:text-[#85ebff]" onClick={() => setActiveModalTerms(true)}>Términos y Condiciones de la Web</span>
+                                <span className="cursor-pointer duration-300 transition-all hover:text-[#85ebff]" onClick={() => setActiveModalPolicy(true)}>Políticas de privacidad</span>
+                            </div>
                         </div>
                     </div>
-                </div>
             </footer>
             <Modal 
                 activeModal={activeModalTerms}

@@ -87,15 +87,15 @@ export const Card: FC<PlanProps> = ({
 
   return (
     <>
-      <div className={`w-[350px]  ${tabble?'h-[600px]':'h-[500px]' } border border-[#EF3829] rounded-md flex flex-col justify-start mx-auto my-6 max-lg:w-[250px]`}>
+      <div className={`w-[350px]  ${tabble?'h-[630px]':'h-[530px]' } border border-[#EF3829] rounded-md flex flex-col justify-start mx-auto my-6 max-lg:w-[320px]`}>
         <div className='w-full h-[70px] bg-[#EF3829] flex items-center text-white'>
           <div className={`flex flex-col justify-center w-full ml-[40px] ${noHeader && 'ml-[20px]' }`}>
             <span className='text-[16px]'>{plan}</span>
-            <span className={`text-[30px] my-[-9px] ${noHeader && 'max-md:text-[20px] text-left'}`}>{extraPlan}</span>
+            <span className={`text-[30px] my-[-9px] ${noHeader && 'max-md:text-[21px] text-left'}`}>{extraPlan}</span>
           </div>
         </div>
 
-        <div className='h-full flex flex-col justify-around'>
+        <div className='h-full flex flex-col justify-around py-[10px]'>
 
           <div className='flex flex-col justify-center items-center gap-[20px]'>
           {
@@ -121,7 +121,7 @@ export const Card: FC<PlanProps> = ({
                   <span className='w-[30px]'><img src={check.src} alt="check" /></span>
                   <div className='flex flex-col'>
                     <span className='text-[22px] my-[2px] leading-[23px]'>{strong}</span>
-                    <span className='text-[16px]'>{description}</span>
+                    <span className='text-[17px]'>{description}</span>
                   </div>
                 </div>
               )
@@ -129,7 +129,7 @@ export const Card: FC<PlanProps> = ({
           </div>
 
           <div className='flex flex-col justify-center items-center'>
-            <div className='w-full flex justify-center items-center gap-[20px] max-lg:gap-[0px]'>
+            <div className='w-full flex justify-center items-center gap-[20px] max-lg:gap-[0px] text-[17px]'>
               <div>{promo}</div>
               <div className='flex items-start'>
                 <span>S/</span>

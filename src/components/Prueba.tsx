@@ -35,6 +35,7 @@ export const Prueba = () => {
       </ul>
       <div className="mt-4">
         Contenido del Tab {activeTab}
+        
       </div>
     </div>
   )
