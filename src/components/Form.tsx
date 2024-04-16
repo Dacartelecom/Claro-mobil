@@ -54,7 +54,7 @@ export const Form: FC<FormProps> = ({
         number
       },{
         headers: {
-          "X-URL-Complete": window.location.href + '?T-source=01clarohogar'
+          "X-URL-Complete": window.location.href
         }
       });
       console.log(res)
