@@ -14,8 +14,8 @@ export const Header = () => {
     tel: string,
     num: string
   }>({
-    tel: '017028605',
-    num: '(01) 7028605'
+    tel: '017540491',
+    num: '(01) 7540491'
   });
   const [TSource] = useState(params.get('T-source'));
 
@@ -60,8 +60,8 @@ export const Header = () => {
       }
     } else {
         setNumber({
-          tel: '017028605',
-          num: '(01) 7028605'
+          tel: '017540491',
+          num: '(01) 7540491'
         });
     }
     
