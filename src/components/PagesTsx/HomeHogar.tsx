@@ -17,7 +17,7 @@ const OPTIONS: any = {
   slidesToScroll: 'auto',
   containScroll: 'trimSnaps'
 };
-const SLIDE_COUNT = 4;
+const SLIDE_COUNT = 3;
 const SLIDES: number[] = Array.from(Array(SLIDE_COUNT).keys());
 const STYLES_MOBILE: CSSProperties = {};
 const STYLES_DESKTOP: CSSProperties = {};

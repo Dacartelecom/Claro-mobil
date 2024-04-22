@@ -17,13 +17,12 @@ const OPTIONS: any = {
   slidesToScroll: 'auto',
   containScroll: 'trimSnaps'
 };
-const SLIDE_COUNT = 4;
+const SLIDE_COUNT = 3;
 const SLIDES: number[] = Array.from(Array(SLIDE_COUNT).keys());
 const STYLES_MOBILE: CSSProperties = {};
 const STYLES_DESKTOP: CSSProperties = {};
 
 const imagesMobile = [
-  'https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/IMG-BANNER-17-MOBBILE.webp?alt=media&token=88db8340-8432-4291-8880-599639c29ca2',
   `${BannerMobile1.src}`,
   `${BannerMobile2.src}`,
   `${BannerMobile3.src}`,
@@ -31,7 +30,6 @@ const imagesMobile = [
 ];
 
 const imagesDesktop = [
-  'https://firebasestorage.googleapis.com/v0/b/win-dacar.appspot.com/o/IMG-BANNER-17.webp?alt=media&token=2d11ef7f-99eb-406b-a1f6-1ff567f87afd',
   `${BannerDesktop1.src}`,
   `${BannerDesktop2.src}`,
   `${BannerDesktop3.src}`,
