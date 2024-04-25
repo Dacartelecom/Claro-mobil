@@ -70,7 +70,7 @@ export const Form: FC<FormProps> = ({
     const data = new URLSearchParams();
     let service = 'PeruHfcCallme'
 
-    callMeNumber(inputState)
+    // callMeNumber(inputState)
 
     if (nombreDelDominio.includes("clarofertas")) {
       if (TSource === 'ext') {
