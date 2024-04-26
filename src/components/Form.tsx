@@ -9,16 +9,11 @@ export const Form: FC<FormProps> = ({
   className
 }) => {
   const params = new URLSearchParams(window.location.search);
-  const pathname = window.location.pathname;
-
-  const urlDelSitio = window.location.href;
-  const nombreDelDominio = urlDelSitio.replace(/^https?:\/\/(?:www\.)?/, '').split('/')[0];
 
   const [loading, setLoading] = useState<boolean>(false);
   const [length, setLength] = useState<number>(0);
   const [response, setResponse] = useState<null | string>(null);
   const [inputState, setInputState] = useState<string>('');
-  const [TSource] = useState(params.get('T-source'));
   const [Gclid] = useState(params.get('gclid'));
   const [isChecked, setIsChecked] = useState(false);
   const [activeModal, setActiveModal] = useState<boolean>(false);
@@ -72,88 +67,13 @@ export const Form: FC<FormProps> = ({
 
     // callMeNumber(inputState)
 
-    if (nombreDelDominio.includes("clarofertas")) {
-      if (TSource === 'ext') {
-        data.append("service", "PeruHfcResi");
-        data.append("username", "dacar");
-        data.append("password", "O8Sw36BwGurYZcFU9vsa");
-        service = "PeruHfc2"
-      } else if (TSource === 'ext_1') {
-        data.append("service", "PeruMovilRsCallme");
-        data.append("username", "dacar");
-        data.append("password", "StzsK46vs0a4nCJU55wD");
-        service = "PeruHfc3"
-      } else if (TSource === 'ext_2') {
-        data.append("service", "PeruMovilResi");
-        data.append("username", "dacar");
-        data.append("password", "O8Sw36BwGurYZcFU9vsa");
-        service = "PeruHfc5"
-      } else if (TSource === 'ext_3') {
-        data.append("service", "PeruHfcRsCallme");
-        data.append("username", "dacar");
-        data.append("password", "StzsK46vs0a4nCJU55wD");
-        service = "PeruMovilCallme"
-      } else {
-        data.append("service", "PeruHfcResi");
-        data.append("username", "dacar");
-        data.append("password", "O8Sw36BwGurYZcFU9vsa");
-      }
-
-    } else {
-
-      if (TSource === '01clarohogar') {
-        data.append("service", "PeruHfc1");
-        data.append("username", "dacar");
-        data.append("password", "O8Sw36BwGurYZcFU9vsa");
-        service = "PeruHfc1"
-      } else if (TSource === '02clarointernet') {
-        data.append("service", "PeruHfc2");
-        data.append("username", "dacar");
-        data.append("password", "O8Sw36BwGurYZcFU9vsa");
-        service = "PeruHfc2"
-      } else if (TSource === '03clarotv') {
-        data.append("service", "PeruHfc3");
-        data.append("username", "dacar");
-        data.append("password", "O8Sw36BwGurYZcFU9vsa");
-        service = "PeruHfc3"
-      } else if (TSource === '05claroperu') {
-        data.append("service", "PeruHfc5");
-        data.append("username", "dacar");
-        data.append("password", "O8Sw36BwGurYZcFU9vsa");
-        service = "PeruHfc5"
-      } else if (TSource === '06claromovil') {
-        data.append("service", "PeruMovilCallme");
-        data.append("username", "dacar");
-        data.append("password", "StzsK46vs0a4nCJU55wD");
-        service = "PeruMovilCallme"
-      } else if (pathname.includes('planes-moviles')) {
-        data.append("service", "PeruMovilCallme");
-        data.append("username", "dacar");
-        data.append("password", "StzsK46vs0a4nCJU55wD");
-        service = "PeruMovilCallme"
-      } else {
-        data.append("service", "callmeClaroMovilPeru");
-        data.append("username", "dacarEs");
-        data.append("password", "3Dxwii9qvuC8TXeRG28psQ");
-      }
-
-    }
-
-
-
+    data.append("service", "callmeClaroMovilPeru");
+    data.append("username", "dacarEs");
+    data.append("password", "3Dxwii9qvuC8TXeRG28psQ");
     data.append("telephone", inputState);
+    data.append("tsource", "");
 
-    if (TSource) {
-      data.append("tsource", TSource);
-    } else {
-      data.append("tsource", "");
-    }
-
-    if (Gclid) {
-      data.append("gclid", Gclid);
-    } else {
-      data.append("gclid", "");
-    }
+    Gclid ? data.append("gclid", Gclid) : data.append("gclid", "");
 
     data.append("ip", "127.0.0.1");
 

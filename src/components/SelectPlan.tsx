@@ -1,26 +1,12 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import './Global.css'
 import Modal from './Modal/Modal';
 
 export const SelectPlan = () => {
-
-  const params = new URLSearchParams(window.location.search);
-  const pathname = window.location.pathname;
   const [activeModal, setActiveModal] = useState<boolean>(false);
-
-  const [TSource] = useState(params.get('T-source'));
-  const [param, setParam] = useState<string>('');
   const [messageButton] = useState<string>('SI YA ERES CLIENTE CLARO HAZ CLICK AQUÍ');
 
   const active = () => setActiveModal(true);
-
-  useEffect(() => {
-    if (TSource) {
-      setParam(`?T-source=${TSource}`);
-    } else {
-      setParam('');
-    }
-  }, [TSource]);
 
   return (
     <div className='w-full h-[90px] bg-[#EF3829] text-white flex justify-around items-center max-lg:flex-col max-lg:h-[150px] max-lg:items-center max-lg:justify-center'>
@@ -29,13 +15,13 @@ export const SelectPlan = () => {
       </div>
       <div className='w-[700px] font-normal text-2xl flex justify-evenly max-lg:w-full h-full max-lg:text-xl max-lg:flex-col max-lg:items-center max-lg:mt-5'>
         <span className='w-full h-full flex items-center justify-center cursor-pointer relative max-lg:w-[50%] '>
-          <a href={`/${param}`} className='text-[20px]'>
+          <a href={`/`} className='text-[20px]'>
             Planes Móviles 
           </a>
           <div className=" underline"></div>
         </span>
         <span className='w-full h-full flex items-center justify-center cursor-pointer relative max-lg:w-[50%] '>
-          <a href={`/planes-hogar${ param }`} className='text-[20px]'>
+          <a href={`/planes-hogar`} className='text-[20px]'>
             Planes Hogar 
           </a>
           <div className=" underline"></div>

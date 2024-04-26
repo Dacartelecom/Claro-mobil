@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ClaroLogoWhite from '../../public/img/Teletalk-B.png'
 import Modal from "./Modal/Modal";
 import  facebook  from "../../public/img/facebook.svg";
@@ -6,13 +6,6 @@ import  linkedin  from "../../public/img/in.svg";
 
 
 export const Footer = () => {
-    const params = new URLSearchParams(window.location.search);
-    const pathname = window.location.pathname;
-
-    const urlDelSitio = window.location.href;
-    const nombreDelDominio = urlDelSitio.replace(/^https?:\/\/(?:www\.)?/, '').split('/')[0];
-  
-
     const [activeModalTerms, setActiveModalTerms] = useState<boolean>(false);
     const [activeModalPolicy, setActiveModalPolicy] = useState<boolean>(false);
     const [number, setNumber] = useState<{
@@ -22,57 +15,6 @@ export const Footer = () => {
         tel: '017540491',
         num: '(01) 7540491'
     });
-    const [TSource] = useState(params.get('T-source'));
-
-    useEffect(() => {
-        if (TSource) {
-            switch (TSource) {
-                case '01clarohogar':
-                    setNumber({
-                        tel: '016806301',
-                        num: '(01) 6806301'
-                    });
-                    break;
-
-                case '02clarointernet':
-                    setNumber({
-                        tel: '016806302',
-                        num: '(01) 6806302'
-                    });
-                    break;
-
-                case '03clarotv':
-                    setNumber({
-                        tel: '016806303',
-                        num: '(01) 6806303'
-                    });
-                    break;
-
-                case '05claroperu':
-                    setNumber({
-                        tel: '016806545',
-                        num: '(01) 6806545'
-                    });
-                    break;
-
-                case '06claromovil':
-                    setNumber({
-                        tel: '016805992',
-                        num: '(01) 6805992'
-                    });
-                    break;
-            }
-        } else {
-
-                setNumber({
-                    tel: '017540491',
-                    num: '(01) 7540491'
-                });
-        }
-    }, [
-        pathname,
-        TSource
-    ]);
 
     return (
         <>
