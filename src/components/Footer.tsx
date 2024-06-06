@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ClaroLogoWhite from '../../public/img/Teletalk-B.png'
 import Modal from "./Modal/Modal";
 import  facebook  from "../../public/img/facebook.svg";
@@ -12,9 +12,39 @@ export const Footer = () => {
         tel: string,
         num: string
     }>({
-        tel: '017540491',
-        num: '(01) 7540491'
+        tel: '017540458',
+        num: '(01) 7540458'
     });
+
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        const TSource = params.get('T-source');
+
+        if (TSource) {
+            switch (TSource) {
+                case '01claromovil':
+                    setNumber({
+                        tel: `017540491`,
+                        num: `(01) 7540491`
+                    });
+                    break;
+
+                case '02claro':
+                    setNumber({
+                    tel: `015009718`,
+                    num: `(01) 5009718`
+                    });
+                    break;
+
+                default:
+                    setNumber({
+                    tel: '017540458',
+                    num: '(01) 7540458'
+                    });
+                    break;
+            };
+        }
+    },[]);
 
     return (
         <>

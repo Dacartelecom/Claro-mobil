@@ -17,7 +17,8 @@ export const Card: FC<PlanProps> = ({
   width,
   height,
   regular,
-  tabble
+  tabble,
+  aditional
 }) => {
   const [activeModal, setActiveModal] = useState<boolean>(false);
   const [activeModalForm, setActiveModalForm] = useState<boolean>(false);
@@ -25,17 +26,48 @@ export const Card: FC<PlanProps> = ({
     tel: string,
     num: string
   }>({
-    tel: '017540491',
-    num: '(01) 7540491'
+    tel: '017540458',
+    num: '(01) 7540458'
   });
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const TSource = params.get('T-source');
+
+    if (TSource) {
+        switch (TSource) {
+            case '01claromovil':
+                setNumber({
+                    tel: `017540458`,
+                    num: `(01) 7540458`
+                });
+                break;
+
+            case '02claro':
+                setNumber({
+                tel: `015009718`,
+                num: `(01) 5009718`
+                });
+                break;
+
+            default:
+                setNumber({
+                tel: '017540458',
+                num: '(01) 7540458'
+                });
+                break;
+        };
+    }
+},[]);
 
   return (
     <>
       <div className={`w-[350px]  ${tabble?'h-[630px]':'h-[530px]' } border border-[#EF3829] rounded-md flex flex-col justify-start mx-auto my-6 max-lg:w-[320px]`}>
-        <div className='w-full h-[70px] bg-[#EF3829] flex items-center text-white'>
+        <div className='w-full min-h-[80px] max-h-[90px] bg-[#EF3829] flex items-center text-white'>
           <div className={`flex flex-col justify-center w-full ml-[40px] ${noHeader && 'ml-[20px]' }`}>
             <span className='text-[16px]'>{plan}</span>
             <span className={`text-[30px] my-[-9px] ${noHeader && 'max-md:text-[21px] text-left'}`}>{extraPlan}</span>
+            {aditional ? <span className='text-xs'>{aditional}</span> : <></>}
           </div>
         </div>
 

@@ -15,13 +15,13 @@ export const SelectPlan = () => {
       </div>
       <div className='w-[700px] font-normal text-2xl flex justify-evenly max-lg:w-full h-full max-lg:text-xl max-lg:flex-col max-lg:items-center max-lg:mt-5'>
         <span className='w-full h-full flex items-center justify-center cursor-pointer relative max-lg:w-[50%] '>
-          <a href={`/`} className='text-[20px]'>
+          <a href={`/${window.location.search}`} className='text-[20px]'>
             Planes Móviles 
           </a>
           <div className=" underline"></div>
         </span>
         <span className='w-full h-full flex items-center justify-center cursor-pointer relative max-lg:w-[50%] '>
-          <a href={`/planes-hogar`} className='text-[20px]'>
+          <a href={`/planes-hogar${window.location.search}`} className='text-[20px]'>
             Planes Hogar 
           </a>
           <div className=" underline"></div>

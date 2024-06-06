@@ -6,9 +6,39 @@ export const Header = () => {
     tel: string,
     num: string
   }>({
-    tel: '017540491',
-    num: '(01) 7540491'
+    tel: '017540458',
+    num: '(01) 7540458'
   });
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const TSource = params.get('T-source');
+
+    if (TSource) {
+        switch (TSource) {
+            case '01claromovil':
+                setNumber({
+                    tel: `017540458`,
+                    num: `(01) 7540458`
+                });
+                break;
+
+            case '02claro':
+                setNumber({
+                tel: `015009718`,
+                num: `(01) 5009718`
+                });
+                break;
+
+            default:
+                setNumber({
+                tel: '017540458',
+                num: '(01) 7540458'
+                });
+                break;
+        };
+    }
+},[]);
 
   return (
     <div className='w-full h-[60px] bg-black text-white flex justify-around items-center'>

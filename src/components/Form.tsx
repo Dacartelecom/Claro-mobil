@@ -65,13 +65,41 @@ export const Form: FC<FormProps> = ({
     const data = new URLSearchParams();
     let service = 'PeruHfcCallme'
 
-    // callMeNumber(inputState)
+    callMeNumber(inputState)
 
-    data.append("service", "callmeClaroMovilPeru");
-    data.append("username", "dacarEs");
-    data.append("password", "3Dxwii9qvuC8TXeRG28psQ");
+    const params = new URLSearchParams(window.location.search);
+    const TSource = params.get('T-source');
+
+    if (TSource) {
+      switch (TSource) {
+        case '01claromovil':
+          data.append("service", "callmeClaroMovilPeru");
+          data.append("username", "dacarEs");
+          data.append("password", "3Dxwii9qvuC8TXeRG28psQ");
+          data.append("tsource", TSource);
+          break;
+
+        case '02claro':
+          data.append("service", "callmeClaroMovilPeru2");
+          data.append("username", "dacarEs");
+          data.append("password", "3Dxwii9qvuC8TXeRG28psQ");
+          data.append("tsource", TSource);
+          break;
+
+        default:
+          data.append("service", "callmeClaroGenerico");
+          data.append("username", "dacarEs");
+          data.append("password", "3Dxwii9qvuC8TXeRG28psQ");
+          data.append("tsource", "");
+          break;
+      };
+    } else {
+      data.append("service", "callmeClaroGenerico");
+      data.append("username", "dacarEs");
+      data.append("password", "3Dxwii9qvuC8TXeRG28psQ");
+      data.append("tsource", "");
+    }
     data.append("telephone", inputState);
-    data.append("tsource", "");
 
     Gclid ? data.append("gclid", Gclid) : data.append("gclid", "");
 

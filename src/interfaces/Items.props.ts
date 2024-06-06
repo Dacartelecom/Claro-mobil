@@ -35,6 +35,7 @@ export interface PlanProps {
   alt?: string
   width?: number
   height?: number
+  aditional?: string
 }
 
 export interface ArrayPlanProps extends Array<PlanProps> {}

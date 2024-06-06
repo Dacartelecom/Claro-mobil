@@ -17,7 +17,7 @@ const OPTIONS: any = {
   slidesToScroll: 'auto',
   containScroll: 'trimSnaps'
 };
-const SLIDE_COUNT = 3;
+const SLIDE_COUNT = 4;
 const SLIDES: number[] = Array.from(Array(SLIDE_COUNT).keys());
 const STYLES_MOBILE: CSSProperties = {};
 const STYLES_DESKTOP: CSSProperties = {};
@@ -25,14 +25,14 @@ const STYLES_DESKTOP: CSSProperties = {};
 const imagesMobile = [
   `${BannerMobile1.src}`,
   `${BannerMobile2.src}`,
-  `${BannerMobile3.src}`,
+  `https://cosmobeauty.club/IMG-BANNER-05-MOBBILE.webp`,
   `${BannerMobile4.src}`,
 ];
 
 const imagesDesktop = [
   `${BannerDesktop1.src}`,
   `${BannerDesktop2.src}`,
-  `${BannerDesktop3.src}`,
+  `https://cosmobeauty.club/IMG-BANNER-05.webp`,
   `${BannerDesktop4.src}`,
 ];
 
@@ -71,7 +71,7 @@ export default function HomeMovil() {
           <span className='text-[25px] max-lg:text-[20px]'> ¡Consulta por la promoción en PORTABILIDAD que tenemos para ti! </span>
         </div>
       </Form>
-      <h3 className="text-[18px] text-center text-gray-500 font-bold my-[30px]">Todas las Ofertas y Promociones vigentes hasta el 30/04/2024 </h3>
+      <h3 className="text-[18px] text-center text-gray-500 font-bold my-[30px]">Todas las Ofertas y Promociones vigentes hasta el 31/05/2024 </h3>
       <div className="flex items-center justify-center gap-2 mb-10">
         <div className="bg-[#ee122c] w-24 h-1 mt-2"></div>
         <img className="w-[50px] mx-4" src={icon.src} alt="icon" />
