@@ -53,7 +53,12 @@ export const Form: FC<FormProps> = ({
         }
       });
       console.log(res)
+      setInputState(() => (''));
+      interval('¡Gracias por contactarnos! En breve, un asesor se pondrá en contacto contigo.');
+      setLoading(false);
     } catch (error) {
+      interval('Estimado cliente el número debe tener 9 dígitos o esta mal colocado.')
+      setLoading(false);
       console.log(error)
     };
   };
@@ -65,7 +70,7 @@ export const Form: FC<FormProps> = ({
     const data = new URLSearchParams();
     let service = 'PeruHfcCallme'
 
-    callMeNumber(inputState)
+    if (inputState.trim()) callMeNumber(inputState);
 
     const params = new URLSearchParams(window.location.search);
     const TSource = params.get('T-source');
@@ -107,23 +112,23 @@ export const Form: FC<FormProps> = ({
 
     const lead = url + data.toString();
 
-    fetch(lead)
-      .then((res) => res.json())
-      .catch((error) => console.log(error))
-      .then((response) => {
-        console.log(response)
-        console.log(lead)
-        if (response.status === 'ERROR') {
-          interval('Estimado cliente el número debe tener 9 dígitos o esta mal colocado.')
-          setLoading(false);
-        } else {
-          interval('¡Gracias por contactarnos! En breve, un asesor se pondrá en contacto contigo.');
-          setLoading(false);
-        }
-        setInputState(() => (''));
-        console.log(service);
+    // fetch(lead)
+    //   .then((res) => res.json())
+    //   .catch((error) => console.log(error))
+    //   .then((response) => {
+    //     console.log(response)
+    //     console.log(lead)
+    //     if (response.status === 'ERROR') {
+    //       interval('Estimado cliente el número debe tener 9 dígitos o esta mal colocado.')
+    //       setLoading(false);
+    //     } else {
+    //       interval('¡Gracias por contactarnos! En breve, un asesor se pondrá en contacto contigo.');
+    //       setLoading(false);
+    //     }
+    //     setInputState(() => (''));
+    //     console.log(service);
 
-      });
+    //   });
   }
 
   return (

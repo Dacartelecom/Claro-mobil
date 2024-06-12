@@ -26,8 +26,8 @@ export const Card: FC<PlanProps> = ({
     tel: string,
     num: string
   }>({
-    tel: '017540458',
-    num: '(01) 7540458'
+    tel: '017028605',
+    num: '(01) 7028605'
   });
 
   useEffect(() => {
@@ -38,22 +38,22 @@ export const Card: FC<PlanProps> = ({
         switch (TSource) {
             case '01claromovil':
                 setNumber({
-                    tel: `017540458`,
-                    num: `(01) 7540458`
+                    tel: `017028787`,
+                    num: `(01) 7028787`
                 });
                 break;
 
             case '02claro':
                 setNumber({
-                tel: `015009718`,
-                num: `(01) 5009718`
+                tel: `017013645`,
+                num: `(01) 7013645`
                 });
                 break;
 
             default:
                 setNumber({
-                tel: '017540458',
-                num: '(01) 7540458'
+                tel: '017028605',
+                num: '(01) 7028605'
                 });
                 break;
         };
