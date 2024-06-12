@@ -62,7 +62,7 @@ export const Card: FC<PlanProps> = ({
 
   return (
     <>
-      <div className={`w-[350px]  ${tabble?'h-[630px]':'h-[530px]' } border border-[#EF3829] rounded-md flex flex-col justify-start mx-auto my-6 max-lg:w-[320px]`}>
+      <div className={`w-[300px]  ${tabble?'h-[630px]':'h-[530px]' } border border-[#EF3829] rounded-md flex flex-col justify-start mx-auto my-6 lg:w-[320px]`}>
         <div className='w-full min-h-[80px] max-h-[90px] bg-[#EF3829] flex items-center text-white'>
           <div className={`flex flex-col justify-center w-full ml-[40px] ${noHeader && 'ml-[20px]' }`}>
             <span className='text-[16px]'>{plan}</span>

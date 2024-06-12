@@ -41,13 +41,14 @@ export const Header = () => {
 },[]);
 
   return (
-    <div className='w-full h-[60px] bg-black text-white flex justify-around items-center'>
+    <div className='w-full min-h-[60px] bg-black text-white flex max-sm:flex-col justify-around items-center'>
         <span className='flex font-normal max-lg:text-[15px] text-[20px] w-[400px] h-[60px] justify-center relative items-center flex-row-reverse gap-[20px] max-lg:gap-[5px] max-lg:w-[270px]'>
           <div><span>Distribuidor Autorizado de Claro</span></div>
         <div className=''><img className='w-[30px] max-lg:w-[20px]' src={ico.src} alt="calro" /></div>
         </span>
-        <div className='flex max-lg:flex-col gap-2 max-lg:gap-0'>
-        <span className='font-normal max-lg:text-[15px] text-[25px]'>Llámanos al </span>  <a className='font-normal max-lg:text-[15px] text-[25px]' href={`tel:${ number.tel }`}>{ number.num }</a>
+        <div className='flex gap-0 lg:gap-1 max-sm:py-1 max-sm:flex max-sm:items-center max-sm:justify-end max-sm:w-full max-sm:gap-4'>
+          <span className='font-normal max-lg:text-[15px] text-[25px]'>Llámanos al </span>
+          <a className='font-normal max-lg:text-[15px] text-[25px] max-sm:py-px max-sm:px-3 max-sm:rounded-xl max-sm:bg-[#0fbddf]' href={`tel:${ number.tel }`}>{ number.num }</a>
         </div>
     </div>
   )
