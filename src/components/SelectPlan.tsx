@@ -26,7 +26,7 @@ export const SelectPlan = () => {
           </a>
           <div className=" underline"></div>
         </span>
-        <div className=" w-[350px] max-sm:w-full max-lg:w-[80%] flex items-center justify-center text-center max-lg:my-[20px]">
+        {/* <div className=" w-[350px] max-sm:w-full max-lg:w-[80%] flex items-center justify-center text-center max-lg:my-[20px]">
             <button
               className=" bg-[#ff3a2d] flex justify-center gap-2 items-center py-1 rounded-full border-2 border-white text-white text-[13px] font-bold uppercase max-md:text-[13px] w-[500px] hover:text-[#ff3a2d] hover:bg-white duration-300 transition-all"
               onClick={ active }
@@ -34,7 +34,7 @@ export const SelectPlan = () => {
               <i className="fa-solid fa-hand-point-right"></i>
               <span className="text-[10px] md:text-xs">"{ messageButton }"</span>
             </button>
-          </div>
+        </div> */}
       </div>
       <Modal
         activeModal={ activeModal }
