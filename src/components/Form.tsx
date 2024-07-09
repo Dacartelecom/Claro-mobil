@@ -132,41 +132,37 @@ export const Form: FC<FormProps> = ({
   }
 
   return (
-    <form className={`flex flex-col w-[450px] h-[420px] justify-start rounded-md sombra text-[#B7202E] ${modal ? 'top-[100px] right-[5%] max-lg:top-[10px] max-lg:right-0' : ''}  text-[#222222] ${ className } max-md:w-[420px]`} onSubmit={sendNumber}>
-    <div className="w-full bg-[#B7202E] h-[40px] flex justify-center items-center text-white p-[10px] rounded-t-lg font-bold"> 
-        <span>¡Pregunta por la Oferta del mes!</span>    
-    </div>
-    <div className="w-full bg-white h-[420px] flex flex-col text-center text-[24px] font-bold gap-[20px] rounded-b-lg p-[15px]"> 
+    <form className={` w-[420px] max-lg:w-[300px] ${response && 'h-[380px]'} h-[320px] bg-white rounded-md ${modal ? 'top-[100px] right-[5%] max-lg:top-[10px] max-lg:right-0' : ''}  text-[#222222] ${ className }`}
+      onSubmit={sendNumber}>
+      <div className='w-full h-full flex flex-col justify-center p-[20px] gap-[10px]'>
         {children}
-        <div className="flex w-full flex-col gap-[15px]">
-            <span className="text-[17px] text-left text-black">Déjanos tu número y te llamaremos</span>
-            
-            <input type="text" className=" border  rounded-md border-[#949494a1] p-2"
+        <div className='flex flex-col justify-center text-[#B7202E]'>
+          <span className='text-[16px]'> Déjanos tu número y te llamaremos </span>
+          <input
+            type="text"
+            id="number-form"
+            className='outline-none border-b-2 border-x-0 border-[#B7202E]'
             placeholder="987654321"
             pattern="[0-9]{1,9}"
             maxLength={9}
             value={inputState}
             onChange={changeNumber}
-            />
-            
-            <span className="text-[17px] text-left flex gap-[5px] text-black">
-                <input type="checkbox" 
-                checked={isChecked}
-                onChange={handleCheckboxChange} 
-                />
-                <span>Acepto los <span onClick={() => setActiveModal(true)} className="cursor-pointer" >Términos y Condiciones</span></span>
-            </span>
-            <button className={`border rounded-md w-[95%] m-auto text-white py-[5px] flex items-center justify-between px-[20px] ${length === 9 && isChecked === true ?'boton-llamar':'boton-llamar-inactive'}`}
+          />
+        </div>
+        <div className='flex gap-2 text-[#B7202E]'>
+          <input className='border-[#B7202E]' type="checkbox"
+            checked={isChecked}
+            onChange={handleCheckboxChange} />
+          <span>Acepto los <span onClick={() => setActiveModal(true)} className="duration-300 transition-all hover:text-[#1F97AE] cursor-pointer">Términos y Condiciones</span></span>
+        </div>
+        <div className='w-full flex justify-center'>
+          <button
             type='submit'
             disabled={length === 9 && isChecked === true ? false : true}
-            >
-                <span>¡Solicitar llamada! {loading && <span className="loader"></span>} </span>
-                <span className="phone">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="size-6">
-                    <path fill="#ffffff" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
-                </svg>
-                </span>
-            </button>
+            className={`bg-[#1F97AE] w-[200px] h-[40px] ${length === 9 && isChecked === true ? 'opacity-100 hover:border hover:border-[#1F97AE] hover:bg-white hover:text-[#1F97AE] ' : 'opacity-50'} border-white rounded-xl text-white transition-all duration-500`}>solicitar llamada {loading && <span className="loader"></span>}</button>
+        </div>
+        <div>
+          {response && <span className="text-[#46b450] text-xl text-center font-bold mt-4 w-[300px]">{response}</span>}
         </div>
     </div>
           <Modal

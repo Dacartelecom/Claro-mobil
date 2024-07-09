@@ -67,7 +67,7 @@ const Modal: FC<ModalProps> = ({
         }}
       >
         <i
-          className="fa-solid fa-xmark absolute top-5 right-5 text-2xl cursor-pointer"
+          className="fa-solid fa-xmark absolute top-5 right-5 text-2xl cursor-pointer z-50"
           onClick={ closeModal }
         ></i>
         { children }
