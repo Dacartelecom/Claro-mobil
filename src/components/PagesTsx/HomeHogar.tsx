@@ -617,13 +617,17 @@ export default function HomeHogar() {
         interval={5000}
       />
       <Form modal={true}
-        className="bg-white absolute max-lg:relative"
+        className="bg-white absolute max-lg:relative w-[450px] h-[400px] sombra max-lg:w-[450px]"
         textLabel="Déjanos tu número y te llamaremos"
         classNameButton="bg-[#ee122c] text-white "
       >
+                <div className="w-full bg-[#B7202E] h-[50px] flex justify-center items-center text-white p-[10px] rounded-t-md font-bold"> 
+          <span>¡Pregunta por la Oferta del mes!</span>    
+        </div>
+
         <div className='w-full flex flex-col text-center text-[#EF3829] justify-center items-center'>
-          <span className='text-[18px] font-bold'> DESCUBRE NUESTROS SERVICIOS MÓVILES </span>
-          <span className='text-[25px] max-lg:text-[20px]'> ¡Consulta por la promoción en PORTABILIDAD que tenemos para ti! </span>
+          <span className='text-[21px]'> DESCUBRE NUESTROS SERVICIOS MÓVILES </span>
+          <span className='text-[28px] max-lg:text-[20px]'> ¡Consulta por la promoción en PORTABILIDAD que tenemos para ti! </span>
         </div>
       </Form>
       <h3 className="text-[18px] text-center text-gray-500 font-bold my-[30px]">Todas las Ofertas y Promociones vigentes hasta el 31/05/2024 </h3>

@@ -132,24 +132,24 @@ export const Form: FC<FormProps> = ({
   }
 
   return (
-    <form className={` w-[420px] max-lg:w-[300px] ${response && 'h-[380px]'} h-[320px] bg-white rounded-md ${modal ? 'top-[100px] right-[5%] max-lg:top-[10px] max-lg:right-0' : ''}  text-[#222222] ${ className }`}
+    <form className={` w-[420px] max-lg:w-[360px] ${response && 'h-[380px]'} h-[390px] bg-white rounded-md ${modal ? 'top-[100px] right-[5%] max-lg:top-[10px] max-lg:right-0' : ''}  text-[#222222] ${ className }`}
       onSubmit={sendNumber}>
-      <div className='w-full h-full flex flex-col justify-center p-[20px] gap-[10px]'>
+      <div className='w-full h-full flex flex-col justify-center gap-[10px]'>
         {children}
-        <div className='flex flex-col justify-center text-[#B7202E]'>
-          <span className='text-[16px]'> Déjanos tu número y te llamaremos </span>
+        <div className='flex flex-col w-full h-full justify-evenly text-[#B7202E] px-[20px]'>
+          <span className='text-[17px] text-black'> Déjanos tu número y te llamaremos </span>
           <input
             type="text"
             id="number-form"
-            className='outline-none border-b-2 border-x-0 border-[#B7202E]'
-            placeholder="987654321"
+            className=' border-2  border-[#B7202E] h-[60px] p-[10px] text-[20px] rounded-xl text-black'
+            placeholder="999 xxx xxx"
             pattern="[0-9]{1,9}"
             maxLength={9}
             value={inputState}
             onChange={changeNumber}
           />
         </div>
-        <div className='flex gap-2 text-[#B7202E]'>
+        <div className='flex gap-2 text-[#B7202E] px-[20px]'>
           <input className='border-[#B7202E]' type="checkbox"
             checked={isChecked}
             onChange={handleCheckboxChange} />
@@ -159,7 +159,7 @@ export const Form: FC<FormProps> = ({
           <button
             type='submit'
             disabled={length === 9 && isChecked === true ? false : true}
-            className={`bg-[#1F97AE] w-[200px] h-[40px] ${length === 9 && isChecked === true ? 'opacity-100 hover:border hover:border-[#1F97AE] hover:bg-white hover:text-[#1F97AE] ' : 'opacity-50'} border-white rounded-xl text-white transition-all duration-500`}>solicitar llamada {loading && <span className="loader"></span>}</button>
+            className={`bg-[#c7171e] w-[400px] h-[50px] ${length === 9 && isChecked === true ? 'opacity-100 hover:border hover:bg-[#EF3829]' : 'opacity-50'} border-white rounded-xl text-white transition-all duration-500 text-2xl`}>¡Solicitar llamada! {loading && <span className="loader"></span>}</button>
         </div>
         <div>
           {response && <span className="text-[#46b450] text-xl text-center font-bold mt-4 w-[300px]">{response}</span>}
