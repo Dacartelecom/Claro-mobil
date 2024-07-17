@@ -132,7 +132,7 @@ export const Form: FC<FormProps> = ({
   }
 
   return (
-    <form className={`flex flex-col w-[450px] h-[420px] justify-start rounded-md sombra text-[#B7202E] ${modal ? 'top-[100px] right-[5%] max-lg:top-[10px] max-lg:right-0' : ''}  text-[#222222] ${ className } max-md:w-[420px]`} onSubmit={sendNumber}>
+    <form className={`flex flex-col w-[450px] ${response? 'h-[500px]': 'h-[420px]'}  justify-start rounded-md sombra text-[#B7202E] ${modal ? 'top-[100px] right-[5%] max-lg:top-[10px] max-lg:right-0' : ''}  text-[#222222] ${ className } max-md:w-[420px]`} onSubmit={sendNumber}>
     <div className="w-full bg-[#B7202E] h-[40px] flex justify-center items-center text-white p-[10px] rounded-t-lg font-bold"> 
         <span>¡Pregunta por la Oferta del mes!</span>    
     </div>
@@ -156,6 +156,7 @@ export const Form: FC<FormProps> = ({
                 />
                 <span>Acepto los <span onClick={() => setActiveModal(true)} className="cursor-pointer" >Términos y Condiciones</span></span>
             </span>
+            {response &&  <span className="py-3"> {response}</span>}
             <button className={`border rounded-md w-[95%] m-auto text-white py-[5px] flex items-center justify-between px-[20px] ${length === 9 && isChecked === true ?'boton-llamar':'boton-llamar-inactive'}`}
             type='submit'
             disabled={length === 9 && isChecked === true ? false : true}
