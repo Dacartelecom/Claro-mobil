@@ -25,14 +25,14 @@ const STYLES_DESKTOP: CSSProperties = {};
 const imagesMobile = [
   `${BannerMobile1.src}`,
   `${BannerMobile2.src}`,
-  `https://cosmobeauty.club/IMG-BANNER-05-MOBBILE.webp`,
+  `${BannerMobile3.src}`,
   `${BannerMobile4.src}`,
 ];
 
 const imagesDesktop = [
   `${BannerDesktop1.src}`,
   `${BannerDesktop2.src}`,
-  `https://cosmobeauty.club/IMG-BANNER-05.webp`,
+  `${BannerDesktop3.src}`,
   `${BannerDesktop4.src}`,
 ];
 

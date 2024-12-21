@@ -12,8 +12,8 @@ export const Footer = () => {
         tel: string,
         num: string
     }>({
-        tel: '017028605',
-        num: '(01) 7028605'
+        tel: '017540458',
+        num: '(01) 7540458'
     });
 
     useEffect(() => {
@@ -24,22 +24,22 @@ export const Footer = () => {
             switch (TSource) {
                 case '01claromovil':
                     setNumber({
-                        tel: `017028787`,
-                        num: `(01) 7028787`
+                        tel: `017540491`,
+                        num: `(01) 7540491`
                     });
                     break;
 
                 case '02claro':
                     setNumber({
-                    tel: `017013645`,
-                    num: `(01) 7013645`
+                    tel: `015009718`,
+                    num: `(01) 5009718`
                     });
                     break;
 
                 default:
                     setNumber({
-                    tel: '017028605',
-                    num: '(01) 7028605'
+                    tel: '017540458',
+                    num: '(01) 7540458'
                     });
                     break;
             };
