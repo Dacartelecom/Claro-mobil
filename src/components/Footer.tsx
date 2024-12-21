@@ -48,22 +48,13 @@ export const Footer = () => {
 
     return (
         <>
-            <footer className='bg-black w-full h-[160px] m-auto max-lg:h-[370px]'>
+            <footer className='bg-black w-full h-[160px] m-auto max-lg:h-[270px]'>
                 <div className='w-[70%] max-lg:w-[90%]  h-full flex mx-auto flex-col text-white items-center justify-end gap-[10px] py-1 max-lg:flex-col'>
                     <div className='w-full flex justify-between max-lg:flex-col max-lg:justify-center'>
                         <div className='flex flex-col gap-[15px] max-lg:justify-center max-lg:items-center'>
-                            <span className='text-[20px] leading-[25px] max-lg:text-[13px] max-lg:leading-[20px]'>Síguenos en nuestras redes</span> 
                             <div className='text-[40px] flex gap-[30px]'>
-                            <a href="https://www.facebook.com/planes.movil.peru"><img className='w-[30px]' src={facebook.src} alt="f" /></a>
-                            <a href="https://www.instagram.com/planesmovilesperu/"><img className='w-[60px]' src={linkedin.src} alt="l" /></a>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/claro-dacar.appspot.com/o/logo-claro-300x108.webp?alt=media&token=839062b2-5738-4843-8e9d-b167fe8df630" alt="logo claro" width="300" height="108"/>
                             </div>
-                        </div>
-                        <div className="max-lg:flex max-lg:w-full max-lg:justify-center">
-                            <img
-                                src={`${ClaroLogoWhite.src}`}
-                                alt={'Logo Claro'}
-                                className="w-[180px] object-cover mt-10 max-lg:my-5"
-                                />
                         </div>
                         <div className='flex flex-col text-right font-medium max-lg:justify-center max-lg:items-center'>
                             <span className='text-[20px] max-lg:text-[17px]'>Contáctanos en :</span> 
@@ -81,8 +72,8 @@ export const Footer = () => {
                         </div>
                 </div>
             </footer>
-            <a href={`tel:${number.tel}`} className="fixed md:hidden z-[100] rounded-full p-3 left-2 bottom-2 bg-[#ee122c]">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="size-6">
+            <a href={`tel:${number.tel}`} className="fixed md:hidden z-[100] rounded-full p-4 left-2 bottom-2 bg-[#ee122c] rebote">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="size-10">
                     <path fill="#ffffff" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
                 </svg>
             </a>
