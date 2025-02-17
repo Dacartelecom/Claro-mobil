@@ -2,11 +2,11 @@ import type { CSSProperties } from "react";
 import BannerDesktop1 from "../../../public/img/moviles-banner-desktop-2.webp";
 import BannerDesktop2 from "../../../public/img/moviles-banner-desktop-3.webp";
 import BannerDesktop3 from "../../../public/img/moviles-banner-desktop-4.webp";
-import BannerDesktop4 from "../../../public/img/moviles-banner-desktop-5.webp";
+import BannerDesktop4 from "../../../public/img/new/2025-02-16-5.webp";
 import BannerMobile1 from "../../../public/img/moviles-banner-mobile-2.webp";
 import BannerMobile2 from "../../../public/img/moviles-banner-mobile-3.webp";
 import BannerMobile3 from "../../../public/img/moviles-banner-mobile-4.webp";
-import BannerMobile4 from "../../../public/img/moviles-banner-mobile-5.webp";
+import BannerMobile4 from "../../../public/img/new/2025-02-16-5m.webp";
 import Carousel from "../Carousel/Carousel";
 import { Form } from "../Form";
 import icon from '../../../public/img/mob.svg'

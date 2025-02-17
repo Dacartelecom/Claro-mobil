@@ -1,12 +1,12 @@
 import type { CSSProperties } from "react";
-import BannerDesktop1 from "../../../public/img/Hogar-banner-1.webp";
-import BannerDesktop2 from "../../../public/img/Hogar-banner-2.webp";
-import BannerDesktop3 from "../../../public/img/Hogar-banner-3.webp";
-import BannerDesktop4 from "../../../public/img/Hogar-banner-4.webp";
-import BannerMobile1 from "../../../public/img/Hogar-banner-mobile-1.webp";
-import BannerMobile2 from "../../../public/img/Hogar-banner-mobile-2.webp";
-import BannerMobile3 from "../../../public/img/Hogar-banner-mobile-3.webp";
-import BannerMobile4 from "../../../public/img/Hogar-banner-mobile-4.webp";
+import BannerDesktop1 from "../../../public/img/new/2025-02-12-1.webp";
+import BannerDesktop2 from "../../../public/img/new/2025-02-12-2.webp";
+import BannerDesktop3 from "../../../public/img/new/2025-02-12-3.webp";
+import BannerDesktop4 from "../../../public/img/new/2025-02-12-4.webp";
+import BannerMobile1 from "../../../public/img/new/2025-02-12-1m.webp";
+import BannerMobile2 from "../../../public/img/new/2025-02-12-2m.webp";
+import BannerMobile3 from "../../../public/img/new/2025-02-12-3m.webp";
+import BannerMobile4 from "../../../public/img/new/2025-02-12-4m.webp";
 import Carousel from "../Carousel/Carousel";
 import { Form } from "../Form";
 import icon from '../../../public/img/home.svg'
@@ -17,7 +17,7 @@ const OPTIONS: any = {
   slidesToScroll: 'auto',
   containScroll: 'trimSnaps'
 };
-const SLIDE_COUNT = 3;
+const SLIDE_COUNT = 4;
 const SLIDES: number[] = Array.from(Array(SLIDE_COUNT).keys());
 const STYLES_MOBILE: CSSProperties = {};
 const STYLES_DESKTOP: CSSProperties = {};
