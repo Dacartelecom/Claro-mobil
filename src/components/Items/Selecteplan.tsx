@@ -135,7 +135,11 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           }
         ]
       },
@@ -158,7 +162,11 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           }
         ]
       },
@@ -181,7 +189,11 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           }
         ]
       },
@@ -204,17 +216,21 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           }
         ]
       },
       {
         plan: '2 PLAY',
         extraPlan: <span>1000 MBPS</span>,
-        promo: 'Precio Regular',
-        price: '146',
+        promo: 'Precio x 6 Meses',
+        price: '130',
         noHeader: false,
-        regular: '',
+        regular: 'Precio Regular S/150',
         data: [
           {
             strong: '1000 Mbps',
@@ -222,7 +238,11 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           }
         ]
       },
@@ -240,7 +260,11 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           }
         ]
       },
@@ -422,7 +446,11 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           }
         ]
       },
@@ -450,7 +478,11 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           }
         ]
       },
@@ -478,7 +510,11 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           }
         ]
       },
@@ -506,7 +542,11 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           }
         ]
       },
@@ -529,7 +569,11 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           },
           {
             strong: 'Claro TV Avanzado',
@@ -556,7 +600,11 @@ export const Selecteplan = () => {
           },
           {
             strong: 'MINUTOS ILIMITADOS a fijos y móviles de Claro Perú',
-            description: ' + 1000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+            description: ' + 5000 MINUTOS para llamar a teléfonos fijos y móviles de otros operadores a nivel nacional.',
+          },
+          {
+            strong: '100 Minutos Internacionales',
+            description: 'a E.E.U.U, Canadá, México y Puerto Rico.',
           },
           {
             strong: 'Claro TV Avanzado',
@@ -572,18 +620,18 @@ export const Selecteplan = () => {
         INTERNET HFC / FTTH
         <div className={`${toggleState===1?'underline-active':'underliner'}`}></div>
         </span>
-        {/* <span className={`w-[400px] h-full flex items-center justify-center cursor-pointer relative text-[17px] border-b border-gray-600 transition-all duration-300 hover:text-[#EF3829] ${toggleState===2?'text-[#EF3829]':''}`} onClick={() => toggleTab(2)}>
+        <span className={`w-[400px] h-full flex items-center justify-center cursor-pointer relative text-[17px] border-b border-gray-600 transition-all duration-300 hover:text-[#EF3829] ${toggleState===2?'text-[#EF3829]':''}`} onClick={() => toggleTab(2)}>
         INTERNET + TELEFONÍA
         <div className={` ${toggleState===2?'underline-active':'underliner'}`}></div>
-        </span> */}
+        </span>
         <span className={`w-[400px] h-full flex items-center justify-center cursor-pointer relative text-[17px] border-b border-gray-600 transition-all duration-300 hover:text-[#EF3829] ${toggleState===3?'text-[#EF3829]':''}`} onClick={() => toggleTab(3)}>
         INTERNET + TELEVISIÓN
         <div className={` ${toggleState===3?'underline-active':'underliner'}`}></div>
         </span>
-        {/* <span className={`w-[400px] h-full flex items-center justify-center cursor-pointer relative text-[17px] border-b border-gray-600 transition-all duration-300 hover:text-[#EF3829] ${toggleState===4?'text-[#EF3829]':''}`} onClick={() => toggleTab(4)}>
+        <span className={`w-[400px] h-full flex items-center justify-center cursor-pointer relative text-[17px] border-b border-gray-600 transition-all duration-300 hover:text-[#EF3829] ${toggleState===4?'text-[#EF3829]':''}`} onClick={() => toggleTab(4)}>
         INTERNET + TELEFONÍA + TV
         <div className={` ${toggleState===4?'underline-active':'underliner'}`}></div>
-        </span> */}
+        </span>
     </div>
     <div className="flex justify-center w-full mt-[100px] mb-[40px] text-[20px] text-gray-600 text-center max-xl:mt-[250px] max-xl:mb-[40px] ">Bono de 1000 Mbps por 6 meses en planes FFTH de 300 Mbps, 400 Mbps y 800 Mbps
       {
@@ -623,7 +671,7 @@ export const Selecteplan = () => {
                 )})}
             </div>
         </div>
-        {/* <div className={toggleState===2?'Active-Planes-Swiper':'Planes-Swiper'}>
+        <div className={toggleState===2?'Active-Planes-Swiper':'Planes-Swiper'}>
             <div className="flex flex-wrap justify-center gap-[50px]">
                 {INTERNET_TELEFONIA.map((item,index)=>{
                 const{
@@ -652,7 +700,7 @@ export const Selecteplan = () => {
                     </div>
                 )})}
             </div>
-        </div> */}
+        </div>
         <div className={toggleState===3?'Active-Planes-Swiper':'Planes-Swiper'}>
             <div className="flex flex-wrap justify-center gap-[50px]">
                 {INTERNET_TELEVISION.map((item,index)=>{
@@ -683,7 +731,7 @@ export const Selecteplan = () => {
                 )})}
             </div>
         </div>
-        {/* <div className={toggleState===4?'Active-Planes-Swiper':'Planes-Swiper'}>
+        <div className={toggleState===4?'Active-Planes-Swiper':'Planes-Swiper'}>
             <div className="flex flex-wrap justify-center gap-[50px]">
                 {INTERNET_TELEVISION_TELEFONIA.map((item,index)=>{
                 const{
@@ -714,7 +762,7 @@ export const Selecteplan = () => {
                     </div>
                 )})}
             </div>
-        </div> */}
+        </div>
     </div>
 </div>
 

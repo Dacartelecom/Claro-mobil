@@ -18,7 +18,7 @@ const OPTIONS: any = {
   containScroll: 'trimSnaps'
 };
 const SLIDE_COUNT = 4;
-const SLIDES: number[] = Array.from(Array(SLIDE_COUNT).keys());
+const SLIDES: number[] = [1,2,3,4,5,6];
 const STYLES_MOBILE: CSSProperties = {};
 const STYLES_DESKTOP: CSSProperties = {};
 
