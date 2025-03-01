@@ -121,7 +121,7 @@ export const Selecteplan = () => {
         plan: '2 PLAY',
         extraPlan: <span>150 MBPS</span>,
         promo: 'Precio Regular',
-        price: '66',
+        price: '70',
         noHeader: false,
         regular: '',
         data: [
@@ -147,7 +147,7 @@ export const Selecteplan = () => {
         plan: '2 PLAY',
         extraPlan: <span>300 MBPS</span>,
         promo: 'Precio Regular',
-        price: '76',
+        price: '80',
         noHeader: false,
         regular: '',
         aditional: "Bono de 1000 Mbps adicionales por 6 meses solo en plan FFTH",
@@ -174,7 +174,7 @@ export const Selecteplan = () => {
         plan: '2 PLAY',
         extraPlan: <span>400 MBPS</span>,
         promo: 'Precio Regular',
-        price: '86',
+        price: '90',
         noHeader: false,
         regular: '',
         aditional: "Bono de 1000 Mbps adicionales por 6 meses solo en plan FFTH",
@@ -199,9 +199,9 @@ export const Selecteplan = () => {
       },
       {
         plan: '2 PLAY',
-        extraPlan: <span>600 MBPS</span>,
+        extraPlan: <span>800 MBPS</span>,
         promo: 'Precio Regular',
-        price: '101',
+        price: '105',
         noHeader: false,
         regular: '',
         aditional: "Bono de 1000 Mbps adicionales por 6 meses solo en plan FFTH",
@@ -250,7 +250,7 @@ export const Selecteplan = () => {
         plan: '2 PLAY',
         extraPlan: <span>1500 MBPS</span>,
         promo: 'Precio Regular',
-        price: '201',
+        price: '205',
         noHeader: false,
         regular: '',
         data: [
@@ -426,10 +426,10 @@ export const Selecteplan = () => {
       {
         plan: '3 PLAY',
         extraPlan: <span>150 MBPS</span>,
-        promo: 'Precio por 3 meses',
-        price: '96',
+        promo: 'Precio por 3 meses (previa evaluación)',
+        price: '77.50',
         noHeader: false,
-        regular: 'Precio regular S/131',
+        regular: 'Precio regular S/155',
         tabble:true,
         data: [
           {
@@ -457,10 +457,10 @@ export const Selecteplan = () => {
       {
         plan: '3 PLAY',
         extraPlan: <span>300 MBPS</span>,
-        promo: 'Precio por 3 meses',
-        price: '106',
+        promo: 'Precio por 3 meses (previa evaluación)',
+        price: '82.50',
         noHeader: false,
-        regular: 'Precio regular S/141',
+        regular: 'Precio regular S/165',
         tabble:true,
         aditional: "Bono de 1000 Mbps adicionales por 6 meses solo en plan FFTH",
         data: [
@@ -489,10 +489,10 @@ export const Selecteplan = () => {
       {
         plan: '3 PLAY',
         extraPlan: <span>400 MBPS</span>,
-        promo: 'Precio por 3 meses',
-        price: '111',
+        promo: 'Precio por 3 meses (previa evaluación)',
+        price: '87.50',
         noHeader: false,
-        regular: 'Precio regular S/146',
+        regular: 'Precio regular S/175',
         tabble:true,
         aditional: "Bono de 1000 Mbps adicionales por 6 meses solo en plan FFTH",
         data: [
@@ -520,11 +520,11 @@ export const Selecteplan = () => {
       },
       {
         plan: '3 PLAY',
-        extraPlan: <span>600 MBPS</span>,
-        promo: 'Precio por 3 meses',
-        price: '126',
+        extraPlan: <span>800 MBPS</span>,
+        promo: 'Precio por 3 meses (previa evaluación)',
+        price: '95',
         noHeader: false,
-        regular: 'Precio regular S/161',
+        regular: 'Precio regular S/190',
         tabble:true,
         aditional: "Bono de 1000 Mbps adicionales por 6 meses solo en plan FFTH",
         data: [
@@ -553,10 +553,10 @@ export const Selecteplan = () => {
       {
         plan: '3 PLAY',
         extraPlan: <span>1000 MBPS</span>,
-        promo: 'Precio por 3 meses',
-        price: '171',
+        promo: 'Precio por 3 meses (previa evaluación)',
+        price: '117.50',
         noHeader: false,
-        regular: 'Precio regular S/206',
+        regular: 'Precio regular S/235',
         tabble:true,
         data: [
           {
@@ -584,10 +584,10 @@ export const Selecteplan = () => {
       {
         plan: '3 PLAY',
         extraPlan: <span>1500 MBPS</span>,
-        promo: 'Precio por 3 meses',
-        price: '226',
+        promo: 'Precio por 3 meses (previa evaluación)',
+        price: '145',
         noHeader: false,
-        regular: 'Precio regular S/261',
+        regular: 'Precio regular S/290',
         tabble:true,
         data: [
           {
