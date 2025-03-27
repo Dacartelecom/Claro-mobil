@@ -15,10 +15,10 @@ export const Selecteplan = () => {
       {
         plan: '1 PLAY',
         extraPlan: <span>150 MBPS</span>,
-        promo: 'Precio x 6 Meses',
-        price: '55',
+        promo: 'Precio Regular',
+        price: '65',
         noHeader: false,
-        regular: 'Precio Regular S/65',
+        regular: '',
         data: [
           {
             strong: '150 Mbps',
